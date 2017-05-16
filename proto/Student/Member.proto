@@ -1,0 +1,38 @@
+option java_package = "com.bofsoft.laio.model.member";
+option java_outer_classname = "MemberProtos";
+
+//0x1000
+//µÇÂ¼
+message LoginReq {
+    optional string Username = 1;
+    optional string Userpassword = 2;
+    optional string Type = 3;
+    optional string Danwei = 4;
+    optional string Ver = 5;
+    optional string SystemType = 6;
+    optional string SystemVersion = 7;
+    optional string UserToken = 8;
+    optional string GUID = 9;
+    optional string PhoneManufacturers = 10;
+    optional string PhoneModel = 11;
+}
+
+message LoginRes {
+    optional string Key = 1;
+    optional string Session = 2;
+    optional string UserPhone = 3;
+    optional string UserERPName = 4;
+    optional string UserERPDanwei = 5;
+    optional string UserUUID = 6;
+    optional string CoachType = 7;
+}
+
+//0x1001
+//×¢ÏúµÇÂ¼
+message LogoutReq {
+    optional string Username = 1;
+}
+
+message LogoutRes {
+    
+}

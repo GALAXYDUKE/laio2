@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:widget="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/newindexbg">
+    <ScrollView
+        android:id="@+id/sv_newhomeactivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:scrollbars="none"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/RL_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/newindex_itembg"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="15dp">
+
+                <com.bofsoft.sdk.widget.imageview.RoundImageView
+                    android:id="@+id/iv_headpic"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:padding="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/icon_default_headstu" />
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@+id/iv_headpic"
+                    android:text=" "
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_userschool"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_username"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/iv_headpic"
+                    android:text="来噢客服"
+                    android:textColor="#b4b4b4"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_yue"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:text="账户余额"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_size_normal" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_order"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:background="@color/newindex_itembg"
+                android:paddingBottom="10dp"
+                android:weightSum="3" >
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_erweima"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/newindex_itembg"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:id="@+id/iv_EnrollmentManagement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/erweima" />
+
+                <TextView
+                    android:id="@+id/tv_EnrollmentManagement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/iv_EnrollmentManagement"
+                    android:text="招生二维码"
+                    android:textColor="@color/white" />
+
+                <ImageView
+                    android:id="@+id/iv_arrow01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="1dp"
+                    android:src="@mipmap/arrow_right_gray" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view6"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#5A5A5A"></View>
+
+            <RelativeLayout
+                android:id="@+id/rl_dingdan"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/newindex_itembg"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:id="@+id/iv_OldStudentsRecruit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/dingdan" />
+
+                <TextView
+                    android:id="@+id/tv_OldStudentsRecruit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/iv_OldStudentsRecruit"
+                    android:text="我的订单"
+                    android:textColor="@color/white" />
+
+                <ImageView
+                    android:id="@+id/iv_arrow02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="1dp"
+                    android:src="@mipmap/arrow_right_gray" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#5A5A5A"></View>
+
+            <RelativeLayout
+                android:id="@+id/rl_anquan"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/newindex_itembg"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:id="@+id/iv_Examination"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/anquan" />
+
+                <TextView
+                    android:id="@+id/tv_Examination"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/iv_Examination"
+                    android:text="安全设置"
+                    android:textColor="@color/white" />
+
+                <ImageView
+                    android:id="@+id/iv_arrow03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="1dp"
+                    android:src="@mipmap/arrow_right_gray" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#5A5A5A"></View>
+
+            <RelativeLayout
+                android:id="@+id/rl_exit"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/newindex_itembg"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:id="@+id/iv_MyStudent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/lururen" />
+
+                <TextView
+                    android:id="@+id/tv_MyStudent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/iv_MyStudent"
+                    android:text="退出登录"
+                    android:textColor="@color/white" />
+
+                <ImageView
+                    android:id="@+id/iv_arrow07"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="1dp"
+                    android:src="@mipmap/arrow_right_gray" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view7"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#5A5A5A"></View>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

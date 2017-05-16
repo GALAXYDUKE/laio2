@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_wait_dialog_border"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/waitDialogDismiss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:textSize="@dimen/SP_12"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:textColor="#FF0000"
+            android:padding="5dp"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/progress_loading"
+            style="@style/WaitDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/waitTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="努力加载中..."
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+</LinearLayout>

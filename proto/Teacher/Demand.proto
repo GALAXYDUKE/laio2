@@ -1,0 +1,104 @@
+option java_package = "com.bofsoft.laio.model.demand";
+option java_outer_classname = "DemandProtos";
+
+//0x2872
+//学员端_获取需求列表/教练端_获取抢单列表
+message DemandListReq{
+    required int32 DemandStatus = 1;
+    required int32 Page = 2;
+    required int32 PageNum = 3;
+}
+
+message DemandListRsp{
+	repeated DemandItem DemandList = 1;
+	optional bool More = 2;
+}
+
+message DemandItem{
+	required string DemandUUID = 1;
+	optional string DemandName = 2;
+	optional int32 ProType = 3;
+	optional string ProTypeName = 4;
+	optional int32 CarTypeId = 5;
+	optional string Addr = 6;
+	optional string Content = 7;
+	optional int32 DemandStatus = 8;
+	optional string PubTime = 9;
+	optional int32 RegType = 10;
+	optional string DeadTime = 11;
+	optional string TrainIntro = 12;
+	optional int32 TestSubId = 13;
+	optional string TrainDate = 14;
+	optional int32 ClassTimeTypeId = 15;
+	optional int32 TrainSpan = 16;
+	optional int32 SeekCount = 17;
+	optional string BuyerUUID = 18;
+	optional string BuyerName = 19;
+	optional string BuyerTel = 20;
+	optional string TrainBeginTime = 21;
+	optional string TrainEndTime = 22;
+	optional string SeekTime = 23;
+}
+
+//0x2875
+//教练端_获取待抢单需求信息
+message DemandDetailReq{
+    required string DemandUUID = 1;
+}
+
+message DemandDetailRsp{
+	required string DemandUUID = 1;
+	optional string DemandName = 2;
+	optional int32 SeekId = 3;
+	optional int32 ProType = 4;
+	optional string ProTypeName = 5;
+	optional int32 CarTypeId = 6;
+	optional string Addr = 7;
+	optional string Content = 8;
+	optional int32 DemandStatus = 9;
+	optional string PubTime = 10;
+	optional int32 RegType = 11;
+	optional string DeadTime = 12;
+	optional string TrainIntro = 13;
+	optional int32 TestSubId = 14;
+	optional string TrainDate = 15;
+	optional int32 ClassTimeTypeId = 16;
+	optional int32 TrainSpan = 17;
+	repeated TimeItem TimeList = 18;
+}
+
+message TimeItem{
+	required int32 Id = 1;
+	optional int32 Num = 2;
+	optional string Name = 3;
+	optional int32 Enable = 4;
+	optional int32 OrderId = 5;
+}
+
+//0x2876
+//教练端_抢单
+message DemandBidReq{
+    required string DemandUUID = 1;
+    repeated TimeItemSimple TimeList = 2;
+}
+
+message DemandStdRsp{
+	required int32 Code = 1;
+	optional string Content = 2;
+}
+
+message TimeItemSimple{
+	required int32 Id = 1;
+	optional string Name = 2;
+}
+
+//0x2877
+//教练端_删除抢单失败的记录
+message delReq{
+	optional string DemandUUID = 1;
+}
+
+message delRes {
+	optional int32 Code = 1;
+	optional string Content = 2;
+}

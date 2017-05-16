@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_white_border_corners"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="name"
+            android:textSize="@dimen/text_size_normal"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2014"
+            android:textSize="@dimen/text_size_normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txt_OrderContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lineSpacingMultiplier="1.3"
+            android:text="详情"
+            android:textSize="@dimen/text_size_normal" />
+
+        <Button
+            android:id="@+id/btn_OrderGroup"
+            android:layout_width="40dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/selector_gray_border"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="支付"
+            android:textColor="@color/text_black_light"
+            android:textSize="@dimen/text_size_small"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:visibility="gone"
+        android:lineSpacingExtra="3dp"
+        android:text="@string/order_wait_handle_tip_one"
+        android:textColor="@color/text_red"
+        android:textSize="@dimen/text_size_normal" />
+
+    <LinearLayout
+        android:id="@+id/llay_ContactStu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/selector_yellow_border_corners"
+        android:gravity="center"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_phone"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="立即联系学员"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_normal" />
+    </LinearLayout>
+
+</LinearLayout>

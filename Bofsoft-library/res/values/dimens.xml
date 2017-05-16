@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 标题栏高度 -->
+    <dimen name="actionbar_height">48dp</dimen>
+    <!-- 标题栏字体大小 -->
+    <dimen name="actionbar_title_size">18sp</dimen>
+    <!-- 标题栏文字按钮大小 -->
+    <dimen name="actionbar_texbutton_size">14sp</dimen>
+
+    <dimen name="DP_1p5">1.5dp</dimen>
+    <dimen name="DP_5">5dp</dimen>
+    <dimen name="DP_6">6dp</dimen>
+    <dimen name="DP_7">7dp</dimen>
+    <dimen name="DP_8">8dp</dimen>
+    <dimen name="DP_9">9dp</dimen>
+    <dimen name="DP_10">10dp</dimen>
+    <dimen name="DP_15">15dp</dimen>
+    <dimen name="DP_20">20dp</dimen>
+    <dimen name="DP_60">60dp</dimen>
+
+    <dimen name="SP_8">8sp</dimen>
+    <dimen name="SP_10">10sp</dimen>
+    <dimen name="SP_12">12sp</dimen>
+    <dimen name="SP_14">14sp</dimen>
+    <dimen name="SP_16">16sp</dimen>
+    <dimen name="SP_18">18sp</dimen>
+    <dimen name="SP_20">20sp</dimen>
+    <dimen name="SP_22">22sp</dimen>
+    <dimen name="SP_24">24sp</dimen>
+
+</resources>

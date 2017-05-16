@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/topView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="6dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="驾校名称："
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/txtSchoolName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="驾校名称"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="教练姓名："
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/txtCoachName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="教练姓名"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="准教车型："
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/txtTrainCarType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="C1"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="培训车型："
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/txtTrainCarModel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="桑塔纳"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="推荐指数："
+                        android:textSize="14dp" />
+
+                    <com.bofsoft.laio.customerservice.Widget.WidgetStarLevel
+                        android:id="@+id/star_recommand"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        app:level_bgdrawable="@mipmap/icon_heart1"
+                        app:level_drawable="@mipmap/icon_heart2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="信用等级："
+                        android:textSize="14dp" />
+
+                    <com.bofsoft.laio.customerservice.Widget.WidgetStarLevel
+                        android:id="@+id/star_credit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        app:level_bgdrawable="@mipmap/icon_star1"
+                        app:level_drawable="@mipmap/icon_star2" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imgCoachPic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/icon_default_head" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/myIntro" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_marginLeft="10dp" -->
+        <!-- android:layout_marginTop="5dp" -->
+        <!-- android:text="自我介绍：" -->
+        <!-- android:textSize="14dp" /> -->
+
+
+        <!-- <com.bofsoft.laio.widget.JasonWebView -->
+        <!-- android:id="@+id/webview" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="wrap_content" /> -->
+    </LinearLayout>
+
+</RelativeLayout>

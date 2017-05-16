@@ -1,0 +1,135 @@
+option java_package = "com.bofsoft.laio.model.product";
+option java_outer_classname = "ProductProtos";
+
+//0x2862
+//加载课表
+message SyllabusLoadReq{
+	required string StartDate = 1;
+	required string EndDate = 2;
+	required string SvrUUID = 3;
+}
+
+//课表集合
+message SyllabusLoadRes{
+	repeated SyllabusListBuf info = 1;
+}
+
+message SyllabusListBuf {
+	optional string UUID = 1;
+	optional string TrainDate = 2;
+	optional int32 TrainType = 3;
+	optional int32 TestSubId = 4;
+	repeated SDTestSubBuf TestSubList = 5;
+	optional int32 ClassTimeTypeId = 6;
+	optional int32 ClassId = 7;
+	optional int32 DistrictId = 8;
+	optional int32 TrainSiteId = 9;
+	optional string TrainBeginTime = 10;
+	optional string TrainEndTime = 11;
+	optional int32 QuotaTotal = 12;
+	optional int32 QuotaUsed = 13;
+	optional int32 FromDP = 14;
+	optional string DeadTime = 15;
+}
+
+//0x2860
+//提交课表
+message SyllabusSetReq {
+	required int32 OpeType = 1;
+	required string TimeTableUUID = 2;
+	required int32 TrainType = 3;
+	required int32 TestSubId = 4;
+	required int32 ClassTimeTypeId = 5;
+	required int32 ClassId = 6;
+	required int32 DistrictId = 7;
+	required int32 TrainSiteId = 8;
+	optional string Tel = 9;
+	optional int32 TrainCount = 10;
+	optional string TrainBeginTime = 11;
+	optional string TrainEndTime = 12;
+	repeated SyllabusDateBuf DateList = 13;
+	repeated SyllabusTimeBuf TimeList = 14;
+}
+
+message SyllabusStdRes {
+	required int32 Code = 1;
+	optional string Content = 2;
+}
+
+//课表提交日期
+message SyllabusDateBuf {
+	required string Date = 1;
+}
+
+//课表提交时间
+message SyllabusTimeBuf {
+	required int32 Id = 1;
+	required int32 Num = 2;
+	required int32 Status = 3;
+}
+
+//0x2863
+//课表详情
+message SyllabusDetailReq {
+	required string TimeTableUUID = 1;
+	optional string SvrUUID = 2;
+	required int32 ShowAppoint = 3;
+	required int32 ProType = 4;
+}
+
+message SyllabusDetailRes {
+	optional int32 ProType = 1;
+	optional int32 TrainType = 2;
+	repeated SDTestSubBuf TestSubList = 3;
+	optional int32 ClassTimeTypeId = 4;
+	optional int32 ClassId = 5;
+	optional int32 DistrictId = 6;
+	optional int32 TrainSiteId = 7;
+	optional string TrainSiteName = 8;
+	optional int32 QuotaTotal = 9;
+	optional int32 QuotaUsed = 10;
+	optional string TrainBeginTime = 11;
+	optional string TrainEndTime = 12;
+	optional string DeadTime = 13;
+	repeated SDTimeBuf TimeList = 14;
+	repeated SDAppointBuf AppointList = 15;
+	repeated SDPriceBuf PriceList = 16;
+}
+
+message SDTestSubBuf {
+	optional int32 Id = 1;
+}
+
+message SDTimeBuf {
+	optional int32 Id = 1;
+	optional int32 Num = 2;
+	optional int32 Enable = 3;
+	optional int32 OrderId = 4;
+	optional string GUID = 5;
+	optional string Name = 6;
+	optional int32 TimeSpace = 7;
+	optional int32 SpecId = 8;
+}
+
+message SDAppointBuf {
+	optional string BuyerUUID = 1;
+	optional string BuyerName = 2;
+	optional string BuyerTel = 3;
+	optional string TrainTime = 4;
+	optional int32 OrderId = 5;
+	optional int32 OrderStatus = 6;
+}
+
+message SDPriceBuf {
+	optional int32 Id = 1;
+	optional int32 SpecId = 2;
+	optional int32 Unit = 3;
+	optional float Price = 4;
+	optional float SalePrice = 5;
+}
+
+//0x2861
+//课表节点下架
+message SyllabusSoldOutReq {
+	optional string TimeTableUUID = 1;
+}

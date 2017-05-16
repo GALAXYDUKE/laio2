@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.bofsoft.sdk.widget.browser.BaseBrowser
+        android:id="@+id/web"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true" />
+
+    <ProgressBar
+        android:id="@+id/mProgress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#e6e6fa"
+        android:progressDrawable="@drawable/ns_browser"
+        android:visibility="gone"></ProgressBar>
+
+</RelativeLayout>

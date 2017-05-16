@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Widget_Input">
+        <attr name="lable" format="string" />
+        <attr name="inPic" format="reference" />
+        <attr name="outPic" format="reference" />
+        <attr name="inputType" format="reference|string" />
+        <attr name="ibackground" format="reference" />
+        <attr name="itext" format="string" />
+        <attr name="itextColor" format="color" />
+        <attr name="itextSize" format="reference|integer" />
+        <attr name="inputMaxLength" format="reference|integer" />
+    </declare-styleable>
+    <declare-styleable name="WidgetStarLevel">
+        <attr name="max_level" format="integer" />
+        <attr name="level" format="integer" />
+        <attr name="level_bgdrawable" format="reference|integer" />
+        <attr name="level_drawable" format="reference|integer" />
+        <attr name="level_canclick" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="Widget_Image_Text_Btn">
+        <attr name="text" format="string" />
+        <attr name="textColor" format="reference|color" />
+        <attr name="textSize" format="reference|integer" />
+        <attr name="src" format="reference" />
+        <attr name="backgroundColor" format="reference|color" />
+        <attr name="background" format="reference" />
+        <attr name="width" format="reference|integer" />
+        <attr name="position" format="string" />
+        <attr name="margin" format="reference|integer" />
+        <attr name="countText" format="string" />
+        <attr name="countLeft" format="reference|integer" />
+        <attr name="countTop" format="reference|integer" />
+        <attr name="scale" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="Widget_Multi_Text_Button">
+        <attr name="textLeft" format="reference|string" />
+        <attr name="textRight" format="reference|string" />
+        <attr name="textColorAll" format="reference|color" />
+        <attr name="textColorLeft" format="reference|color" />
+        <attr name="textColorRight" format="reference|color" />
+        <attr name="textSizeAll" format="reference|integer" />
+        <attr name="textSizeLeft" format="reference|integer" />
+        <attr name="textSizeRight" format="reference|integer" />
+        <attr name="tagVisiable" format="boolean" />
+        <attr name="bottomLineVisiable" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="Widget_Button">
+        <attr name="bInPic" format="reference" />
+        <attr name="bOutPic" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="OptionTab">
+        <attr name="tabTextSize" format="reference|dimension" />
+        <attr name="tabTextColorSel" format="color|reference" />
+        <attr name="tabTextColorUnSel" format="color|reference" />
+        <attr name="lineHeight" format="reference|dimension" />
+        <attr name="lineColor" format="color|reference" />
+        <attr name="tabBtnBackgroudSel" format="color|reference" />
+        <attr name="tabBtnBackgroudUnSel" format="color|reference" />
+        <attr name="tabBtnBackgroudUnTouch" format="color|reference" />
+    </declare-styleable>
+</resources>

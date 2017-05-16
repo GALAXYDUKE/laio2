@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:background="@mipmap/pop">
+
+        <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_CarLicense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/SP_18"
+                android:text="川A12345"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <LinearLayout
+                android:id="@+id/ll_Navigation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/ll_Track"
+                android:layout_toStartOf="@+id/ll_Track">
+                <ImageView
+                    android:id="@+id/iv_Navigation"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/popwindow_navigation"/>
+                <TextView
+                    android:id="@+id/tv_Navigation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="导航"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_Track"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/iv_close"
+                android:layout_toStartOf="@+id/iv_close">
+                <ImageView
+                    android:id="@+id/iv_Track"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/popwindow_track_on"/>
+                <TextView
+                    android:id="@+id/tv_Track"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="追踪"/>
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="fitXY"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:src="@mipmap/popwindow_close"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_equipmentTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/rl_top">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设备时间："
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:id="@+id/tv_equipmentTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017-02-16 15:56:00"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/ll_equipmentTime">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="状        态："
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="停车超时"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_speed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/ll_status">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="速        度："
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:id="@+id/tv_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.0"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_latlong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/ll_speed">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="经  纬  度："
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:id="@+id/tv_latlong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30.596343,104.055461"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_addr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/ll_latlong"
+            android:paddingBottom="10dp">
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="位        置：成都市高新区雍翠路87号南城都汇汇智园成都市高新区雍翠路87号南城都汇汇智园"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

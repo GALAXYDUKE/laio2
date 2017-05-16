@@ -1,0 +1,6 @@
+include ':StudentClient'
+include ':LaioCustomerService'
+include ':Bofsoft-library'
+include ':TeacherClient'
+include ':alipay_lib'
+include ':Laiovehiclegps'

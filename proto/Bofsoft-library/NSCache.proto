@@ -1,0 +1,13 @@
+option java_package = "com.bofsoft.sdk.cache.data";
+option java_outer_classname = "NSCacheProtos";
+
+message Config {
+	repeated ConfigItem configInfo = 1;
+}
+
+//每个请求的缓存配置
+message ConfigItem {
+	optional string key = 1;
+	optional int64 cacheTime = 2;		//开始缓存毫秒数
+	optional int32 cacheModel = 3;		//缓存类型	SHORT, MEDIUM, MEDIUM_LONG, LONG
+}

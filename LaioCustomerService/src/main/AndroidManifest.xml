@@ -1,0 +1,255 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.bofsoft.laio.customerservice"
+    android:installLocation="auto"
+    android:versionCode="56000"
+    android:versionName="2.1.0">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!--<uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />-->
+    <uses-permission android:name="android.permission.ACCES_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <!-- 来电消音 -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 摄影机 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <!-- 富媒体需要声明的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+
+    <!-- 适配Android N系统必需的ContentProvider写权限声明，写权限包含应用包名-->
+    <!--<uses-permission android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.bofsoft.laio.customerservice" />-->
+    <!--<permission-->
+    <!--android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.bofsoft.laio.customerservice"-->
+    <!--android:protectionLevel="normal"></permission>-->
+
+    <application
+        android:name="com.bofsoft.laio.customerservice.Application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:restoreNeedsApplication="true"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme"
+        tools:replace="android:name, android:allowBackup, android:icon">
+        <activity
+            android:name="com.bofsoft.laio.customerservice.Activity.FlashActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.bofsoft.laio.customerservice.Activity.IndexActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+        <activity
+            android:name="com.bofsoft.laio.customerservice.Activity.BNDemoGuideActivity"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.bofsoft.laio.customerservice.Activity.SmsActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+        <activity
+            android:name="com.bofsoft.laio.customerservice.Activity.LoginActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+        <activity
+            android:name="com.bofsoft.laio.customerservice.Activity.AboutUsActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+        <activity
+            android:name="com.bofsoft.laio.customerservice.Activity.RegisterProtocolActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+        <activity
+            android:name="com.bofsoft.laio.customerservice.Activity.SmsWarningActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+        <activity
+            android:name=".Activity.StudentEnrollActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+        <activity
+            android:name=".Activity.Select.SelectEnrollCarTypeActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+        <activity
+            android:name=".Activity.Select.SelectEnrollReasonActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+        <activity
+            android:name=".Activity.Select.SelectIdTypeActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+        <activity
+            android:name=".Activity.Select.SelectStuSourceActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+        <activity
+            android:name=".Activity.Setting.BandingAliPayAccountActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+        <activity
+            android:name=".Activity.Setting.ModifyPasswordActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+        <activity
+            android:name=".Activity.Setting.SetActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+        <activity
+            android:name=".Activity.Order.OrderGrpTransferActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+        <activity
+            android:name=".Activity.Order.OrderGrpListActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+        <activity
+            android:name=".Activity.erweima.ShareActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+        <activity
+            android:name=".Activity.Order.OrderDetailsActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+        <activity
+            android:name=".Activity.Money.AccountBalanceDetailsActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+        <activity
+            android:name=".Activity.Money.AccountBalanceListActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+        <activity
+            android:name=".Activity.Money.AccountManagerActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+        <activity
+            android:name=".Activity.Money.BalanceOutActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+        <activity
+            android:name=".Activity.Money.SetPayPasswdActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+        <activity android:name=".Activity.ForgetPasswordActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+        <activity android:name=".Activity.ResetPasswordActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+
+        <service
+            android:name="com.bofsoft.laio.service.DataCenter"
+            android:stopWithTask="true">
+            <intent-filter>
+                <action android:name="com.bofsoft.laio.service.DataCenter"></action>
+            </intent-filter>
+        </service>
+        <!--&lt;!&ndash;地图key&ndash;&gt;-->
+        <!--<meta-data-->
+        <!--android:name="com.baidu.lbsapi.API_KEY"-->
+        <!--android:value="TtEMQtxWrvAoQ8VKt2Wvr1oGhoy9Bm67" />-->
+        <!--&lt;!&ndash;推送key&ndash;&gt;-->
+        <!--<meta-data-->
+        <!--android:name="api_key"-->
+        <!--android:value="TtEMQtxWrvAoQ8VKt2Wvr1oGhoy9Bm67" />-->
+
+        <!--<service-->
+        <!--android:name="com.bofsoft.laio.service.DataCenter"-->
+        <!--android:stopWithTask="true">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="com.bofsoft.laio.service.DataCenter"></action>-->
+        <!--</intent-filter>-->
+        <!--</service>-->
+
+        <!--&lt;!&ndash; push service start &ndash;&gt;-->
+        <!--&lt;!&ndash; 用于接收系统消息以保证PushService正常运行 &ndash;&gt;-->
+        <!--<receiver-->
+        <!--android:name="com.baidu.android.pushservice.PushServiceReceiver"-->
+        <!--android:process=":bdservice_v1">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.intent.action.BOOT_COMPLETED" />-->
+        <!--<action android:name="android.net.conn.CONNECTIVITY_CHANGE" />-->
+        <!--<action android:name="com.baidu.android.pushservice.action.notification.SHOW" />-->
+        <!--<action android:name="com.baidu.android.pushservice.action.media.CLICK" />-->
+        <!--&lt;!&ndash; 以下四项为可选的action声明，可大大提高service存活率和消息到达速度 &ndash;&gt;-->
+        <!--<action android:name="android.intent.action.MEDIA_MOUNTED" />-->
+        <!--<action android:name="android.intent.action.USER_PRESENT" />-->
+        <!--<action android:name="android.intent.action.ACTION_POWER_CONNECTED" />-->
+        <!--<action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />-->
+        <!--</intent-filter>-->
+        <!--</receiver>-->
+        <!--&lt;!&ndash; Push服务接收客户端发送的各种请求&ndash;&gt;-->
+        <!--<receiver-->
+        <!--android:name="com.baidu.android.pushservice.RegistrationReceiver"-->
+        <!--android:process=":bdservice_v1">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="com.baidu.android.pushservice.action.METHOD" />-->
+        <!--<action android:name="com.baidu.android.pushservice.action.BIND_SYNC" />-->
+        <!--</intent-filter>-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.intent.action.PACKAGE_REMOVED" />-->
+        <!--<data android:scheme="package" />-->
+        <!--</intent-filter>-->
+        <!--</receiver>-->
+        <!--<service-->
+        <!--android:name="com.baidu.android.pushservice.PushService"-->
+        <!--android:exported="true"-->
+        <!--android:process=":bdservice_v1">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="com.baidu.android.pushservice.action.PUSH_SERVICE" />-->
+        <!--</intent-filter>-->
+        <!--</service>-->
+
+        <!--&lt;!&ndash; 4.4版本新增的CommandService声明，提升小米和魅族手机上的实际推送到达率 &ndash;&gt;-->
+        <!--<service-->
+        <!--android:name="com.baidu.android.pushservice.CommandService"-->
+        <!--android:exported="true" />-->
+
+        <!--&lt;!&ndash; 适配Android N系统必需的ContentProvider声明，写权限包含应用包名&ndash;&gt;-->
+        <!--<provider-->
+        <!--android:name="com.baidu.android.pushservice.PushInfoProvider"-->
+        <!--android:authorities="com.bofsoft.laio.customerservice.bdpush"-->
+        <!--android:writePermission="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.bofsoft.laio.customerservice"-->
+        <!--android:protectionLevel="signature"-->
+        <!--android:exported="true" />-->
+
+        <!--&lt;!&ndash; push结束 &ndash;&gt;-->
+
+        <!--&lt;!&ndash; 此处Receiver名字修改为当前包名路径 &ndash;&gt;-->
+        <!--<receiver android:name="com.bofsoft.laio.customerservice.Common.MyPushMessageReceiver">-->
+        <!--<intent-filter>-->
+        <!--&lt;!&ndash; 接收push消息 &ndash;&gt;-->
+        <!--<action android:name="com.baidu.android.pushservice.action.MESSAGE" />-->
+        <!--&lt;!&ndash; 接收bind、setTags等method的返回结果&ndash;&gt;-->
+        <!--<action android:name="com.baidu.android.pushservice.action.RECEIVE" />-->
+        <!--&lt;!&ndash; 接收通知点击事件，和通知自定义内容 &ndash;&gt;-->
+        <!--<action android:name="com.baidu.android.pushservice.action.notification.CLICK" />-->
+        <!--</intent-filter>-->
+        <!--</receiver>-->
+
+    </application>
+
+</manifest>

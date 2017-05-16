@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/mytoorbar_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/margin_left_right"
+        android:paddingRight="@dimen/margin_left_right">
+
+        <com.bofsoft.laio.laiovehiclegps.Widget.Widget_Input
+            android:id="@+id/wi_code"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            app:inPic="@mipmap/login_code_focus"
+            app:inputMaxLength="11"
+            app:itext="请输入系统编号"
+            app:lable="编        号"
+            app:outPic="@mipmap/login_code_normal"/>
+
+        <com.bofsoft.laio.laiovehiclegps.Widget.Widget_Input
+            android:id="@+id/wi_username"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            app:inPic="@mipmap/login_username_focus"
+            app:inputMaxLength="11"
+            app:itext="请输入用户名"
+            app:lable="用  户  名"
+            app:outPic="@mipmap/login_username_normal"/>
+
+        <com.bofsoft.laio.laiovehiclegps.Widget.Widget_Input
+            android:id="@+id/wi_password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            app:inPic="@mipmap/login_password_focus"
+            app:inputMaxLength="20"
+            app:inputType="textPassword"
+            app:itext="请输入密码"
+            app:lable="密        码"
+            app:outPic="@mipmap/login_password_normal"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp">
+
+        <CheckBox
+            android:id="@+id/checkProtocol_Vas"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/selector_checkbox_mul"
+            android:button="@null"
+            android:checked="true" />
+
+        <TextView
+            android:id="@+id/txtProtocol_Vas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/SP_8"
+            android:layout_toRightOf="@+id/checkProtocol_Vas"
+            android:text="我已阅读并同意"
+            android:textColor="@color/lightgrey"
+            android:textSize="@dimen/SP_12" />
+
+        <TextView
+            android:id="@+id/txtProtocol_Vas02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/txtProtocol_Vas"
+            android:text="软件许可及服务协议"
+            android:textColor="@color/lightgrey"
+            android:textSize="@dimen/SP_12" />
+    </RelativeLayout>
+
+    <com.bofsoft.laio.laiovehiclegps.Widget.Widget_Image_Text_Btn
+        android:id="@+id/login_btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/loginBtn_margin_left_right"
+        android:layout_marginRight="@dimen/loginBtn_margin_left_right"
+        android:layout_marginTop="20dp"
+        app:backgroundColor="@color/loginBtnColor"
+        app:text="登 录"
+        app:textColor="@color/white"
+        app:textSize="16" />
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+    <!--自定义工具栏-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:id="@+id/toorBar_relativeLayout">
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_margin="12dp"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/toorBar_leftImageView"
+        android:background="@mipmap/index_mine_nomal"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignTop="@+id/toorBar_leftImageView"
+        android:id="@+id/toorBar_title"
+        android:text="来噢租车管理"
+        android:paddingBottom="5dp"
+        android:textSize="@dimen/textsize_16sp"
+        />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_margin="12dp"
+        android:layout_alignParentRight="true"
+        android:background="@mipmap/index_message"
+        android:id="@+id/toorBar_rightImageView"
+        />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/toorBar_relativeLayout"
+        android:background="@color/mytoorbar_line"
+        android:visibility="gone"
+        android:id="@+id/toorBar_line"/>
+
+</RelativeLayout>

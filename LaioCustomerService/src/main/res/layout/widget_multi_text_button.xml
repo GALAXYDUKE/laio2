@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rlay_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/multi_text_leftText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="text"
+            android:textColor="@color/text_black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/img_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@mipmap/arrow_right_gray"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/multi_text_rightText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@id/img_tag"
+            android:layout_toRightOf="@id/multi_text_leftText"
+            android:gravity="center_vertical|right"
+            android:text="righttext"
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_gray" />
+
+</RelativeLayout>

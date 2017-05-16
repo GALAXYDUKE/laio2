@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_white"
+    android:orientation="vertical" >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_white_border_corners"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="学员姓名"
+                    android:textColor="@color/text_black_light"
+                    android:textSize="14sp" />
+
+                <include
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    layout="@layout/line_vertical" />
+
+                <EditText
+                    android:id="@+id/edtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_black_light"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <com.bofsoft.laio.customerservice.Widget.Widget_Multi_Text_Button
+                android:id="@+id/layout_cardType"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/selector_white_border_corners"
+                android:gravity="left|center"
+                app:tagVisiable="true"
+                app:textColorAll="@color/text_white"
+                app:textLeft="身份证明类型"
+                app:textSizeAll="14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/selector_white_border_corners"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="证件号码"
+                    android:textColor="@color/text_black_light"
+                    android:textSize="14sp" />
+
+                <include
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    layout="@layout/line_vertical" />
+
+                <EditText
+                    android:id="@+id/edtCardNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/text_black_light"
+                    android:imeOptions="actionNext"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/selector_white_border_corners"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="联系电话"
+                    android:textColor="@color/text_black_light"
+                    android:textSize="14sp" />
+
+                <include
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    layout="@layout/line_vertical" />
+
+                <EditText
+                    android:id="@+id/edtPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:inputType="phone"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/text_black_light"
+                    android:textSize="14sp" 
+                    android:imeOptions="actionDone"/>
+            </LinearLayout>
+
+            <com.bofsoft.laio.customerservice.Widget.Widget_Multi_Text_Button
+                android:id="@+id/layout_CarType"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/selector_white_border_corners"
+                android:gravity="left|center"
+                app:tagVisiable="true"
+                app:textColorAll="@color/text_white"
+                app:textLeft="报考车型"
+                app:textSizeAll="14" />
+
+            <com.bofsoft.laio.customerservice.Widget.Widget_Multi_Text_Button
+                android:id="@+id/layout_Reason"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/selector_white_border_corners"
+                android:gravity="left|center"
+                app:tagVisiable="true"
+                app:textColorAll="@color/text_white"
+                app:textLeft="报考原因"
+                app:textSizeAll="14" />
+
+            <com.bofsoft.laio.customerservice.Widget.Widget_Multi_Text_Button
+                android:id="@+id/layout_Scource"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/selector_white_border_corners"
+                android:gravity="left|center"
+                app:tagVisiable="true"
+                app:textColorAll="@color/text_white"
+                app:textLeft="学员来源"
+                app:textSizeAll="14" />
+
+            <!--<com.bofsoft.laio.customerservice.Widget.Widget_Multi_Text_Button-->
+                <!--android:id="@+id/layout_TrainType"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:background="@drawable/selector_white_border_corners"-->
+                <!--android:gravity="left|center"-->
+                <!--app:tagVisiable="true"-->
+                <!--app:textColorAll="@color/text_white"-->
+                <!--app:textLeft="培训模式"-->
+                <!--app:textSizeAll="14" />-->
+
+            <!--<com.bofsoft.laio.customerservice.Widget.Widget_Multi_Text_Button-->
+                <!--android:id="@+id/layout_CoachCar"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:background="@drawable/selector_white_border_corners"-->
+                <!--android:gravity="left|center"-->
+                <!--app:tagVisiable="true"-->
+                <!--app:textColorAll="@color/text_white"-->
+                <!--app:textLeft="教学车辆 "-->
+                <!--app:textSizeAll="14" />-->
+
+            <!-- <EditText -->
+            <!-- android:id="@+id/edtRemark" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_marginTop="5dp" -->
+            <!-- android:background="@drawable/bg_input_border" -->
+            <!-- android:gravity="left|top" -->
+            <!-- android:hint="输入备注信息" -->
+            <!-- android:inputType="textMultiLine" -->
+            <!-- android:minHeight="100dp" -->
+            <!-- android:padding="10dp" -->
+            <!-- android:textColor="@color/text_black_light" -->
+            <!-- android:textSize="14sp" /> -->
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.bofsoft.laio.customerservice.Widget.Widget_Image_Text_Btn
+        android:id="@+id/itbtn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:background="@mipmap/button_send"
+        app:text="提交"
+        app:textColor="@color/text_white"
+        app:textSize="16" />
+
+</LinearLayout>

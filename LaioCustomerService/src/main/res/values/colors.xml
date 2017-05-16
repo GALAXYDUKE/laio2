@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--background color-->
+    <color name="app_bg">#F0F0F0</color>
+    <color name="app_white">#FFFFFF</color>
+    <color name="marker_bg">#FBCA03</color>
+    <color name="green_bg">#43BF5F</color>
+    <color name="searchbox_bg">#43BF5F</color>
+    <color name="gray_bg">#666666</color>
+    <color name="bg_gray">#9c9c9c</color>
+    <color name="bg_gray_light">#d3d3d3</color>
+    <color name="global_bg">#eeeff3</color>
+    <color name="bg_D8">#D8D8D8</color>
+    <color name="bg_blue">#73B3F3</color>
+
+    <color name="actionbar_btn_normal">#00000000</color>
+    <color name="actionbar_btn_down">#5C84B4</color>
+
+    <!--textcolor-->
+    <color name="textcolor_blue">#0e9ef5</color>
+    <color name="textcolor_green">#43BF5F</color>
+    <color name="textcolor_gray">#666666</color>
+    <color name="textcolor_gray1">#999999</color>
+    <color name="textcolor_white">#FFFFFF</color>
+
+    <!--linecolor-->
+    <color name="linecolor_white">#E6E6E6</color>
+    <color name="line_color">#dadada</color>
+    <color name="text_link">#00377A</color>
+
+    <color name="newindexbg">#182239</color>
+    <color name="newindex_itembg">#11ffffff</color>
+    <color name="newindex_bottom">#225999</color>
+
+    <color name="group_bg">#ffffff</color>
+    <color name="group_gray">#fafafa</color>
+    <color name="app_bg1">#F5F5F5</color>
+    <color name="line_bg">#dddddd</color>
+    <color name="tc_gray">#666666</color>
+    <color name="tc_gray1">#E5E5E5</color>
+    <color name="tc_style1">#F04704</color>
+    <color name="tc_style2">#FF7F00</color>
+    <color name="new_actionbarcolor">#161B33</color>
+
+
+    <color name="White">#FFFFFF</color>
+    <color name="Red">#FF0000</color>
+    <color name="bg_border_line">#dfdfdf</color>
+
+    <!-- 背景颜色 -->
+    <color name="appBgColor">#F6FAFB</color>
+    <!-- newBgColor 2016.12.15 新增颜色 以后所有背影颜色 都用这个颜色 -->
+    <color name="newBgColor">#f8f8f8</color>
+    <color name="bg_red">#FF0000</color>
+    <color name="bg_black">#000000</color>
+    <color name="bg_blue_light">#D7E7F7</color>
+    <color name="bg_white">#FFFFFF</color>
+    <color name="bg_white_unsel">#F4F4F4</color>
+    <color name="bg_white_touch">#FFFFF0</color>
+    <color name="bg_green">#117E9D</color>
+    <color name="bg_yellow">#ffff00</color>
+    <color name="bg_yellow_verifycode">#f39f34</color>
+    <!-- 验证码背景颜色 -->
+
+    <!--<color name="bg_orange">#ee9524</color>-->
+    <color name="bg_orange">#f97135</color>
+    <color name="bg_orange_two">#f29e31</color>
+    <color name="bg_orange_red">#EB5219</color>
+    <color name="bg_orange_red_two">#FB5300</color>
+    <color name="bg_gray_two">#646464</color>
+    <!-- 较浅 -->
+    <color name="bg_gray_three">#4F4F4F</color>
+    <!-- 较深(略黑) -->
+
+    <color name="btn_yellow_normal">#F3A134</color>
+    <!-- 按钮正常颜色（橙黄） -->
+    <color name="btn_yellow_pressed">#FFD060</color>
+    <!-- 按钮点击颜色（黄） -->
+    <color name="btn_yellow_unenable">#AFAFAF</color>
+    <!-- 按钮不可用颜色（灰） -->
+
+
+    <!-- 文本颜色 -->
+    <color name="text_black">#000000</color>
+    <!-- <color name="text_black_light">#7C7C7C</color> -->
+    <color name="text_black_light">#3e3e3e</color>
+    <color name="text_yellow">#E79543</color>
+    <color name="text_white">#ffffff</color>
+    <!-- 白色 -->
+    <color name="text_blue">#004476</color>
+    <!-- 蓝 -->
+    <color name="text_blue_light">#3399ff</color>
+    <!-- 蓝 -->
+    <color name="text_blue_deep">#011FB3</color>
+    <!-- 深蓝 -->
+    <color name="text_gray">#7d8a95</color>
+    <color name="text_gray_light">#969696</color>
+    <!-- 浅灰 -->
+    <color name="text_gray_deep">#ff555555</color>
+    <!-- 深灰 -->
+    <color name="text_green">#117E9D</color>
+    <color name="text_red">#E22222</color>
+    <!-- E22222 -->
+    <color name="text_orange">#ee9524</color>
+    <color name="text_orange_red">#EB5219</color>
+    <color name="transparent">#00000000</color>
+    <color name="index_color1">#b0dc17</color>
+    <color name="index_color2">#83cc04</color>
+    <color name="index_color3">#f69d11</color>
+    <color name="index_color4">#78d21f</color>
+    <color name="index_color5">#27c693</color>
+    <color name="index_color6">#f98118</color>
+    <color name="index_color7">#1ab080</color>
+    <color name="index_color8">#21a194</color>
+    <color name="index_color9">#f9bc19</color>
+
+    <!-- 初学培训 -->
+    <color name="bg_search">#cccccc</color>
+    <!-- 搜索框背景 -->
+    <color name="bg_train_search_text">#999999</color>
+    <!-- 文字 -->
+    <!-- 购买人数 -->
+    <color name="bg_search_border">#ebebeb</color>
+    <!-- 边框 -->
+    <color name="train_coachname_text">#333333</color>
+    <!-- 计时计程 -->
+
+
+    <!-- 培训产品详情 -->
+    <color name="bg_detail_line_light">#d6d6d6</color>
+    <!-- 线 -->
+    <color name="bg_detail_line">#f1f1f1</color>
+    <!-- 线 -->
+    <color name="bg_detail_bottom">#f8f8f8</color>
+    <!-- 收藏 咨询 购买的背景色 -->
+
+    <color name="bg_line_color">#dfdfdf</color>
+    <!-- 订单详情 线的背景色 -->
+
+    <color name="RGB_YELLOW">#F04704</color>
+
+
+    <!-- 二维码可能用到的颜色 -->
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="possible_result_points">#c0ffbd21</color> <!-- Android standard ICS color -->
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c099cc00</color> <!-- Android standard ICS color -->
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="status_text">#ffffffff</color>
+    <!--<color name="transparent">#00000000</color>-->
+    <color name="viewfinder_laser">#ffcc0000</color> <!-- Android standard ICS color -->
+    <color name="viewfinder_mask">#60000000</color>
+</resources>

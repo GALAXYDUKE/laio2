@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.bofsoft.sdk.scrollview.ScrollViewContainer
+        android:id="@+id/scrollViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.bofsoft.sdk.scrollview.ScrollViewOver
+            android:id="@+id/top_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:id="@+id/img_toach_photo"
+                            android:layout_width="match_parent"
+                            android:layout_height="240dp"
+                            android:src="@mipmap/icon_default_big" />
+
+                        <TextView
+                            android:id="@+id/saleTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/sjx"
+                            android:gravity="center_vertical"
+                            android:paddingBottom="40dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="40dp"
+                            android:paddingTop="5dp"
+                            android:text="300元\n首付"
+                            android:textColor="#FFFFFF"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_left_right5"
+                        android:layout_marginLeft="@dimen/margin_left_right5"
+                        android:layout_marginRight="@dimen/margin_left_right5"
+                        android:layout_marginTop="@dimen/margin_left_right10"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/tv_train_content"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:drawableRight="@mipmap/arrow_right"
+                                android:text="C1科目二 桑塔纳初学培训"
+                                android:textColor="@color/text_black_light"
+                                android:textSize="@dimen/text_size_normal" />
+
+                            <TextView
+                                android:id="@+id/tv_SaleInfo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:lineSpacingMultiplier="1.3"
+                                android:text="优惠"
+                                android:textColor="@color/text_red"
+                                android:textSize="@dimen/text_size_small" />
+
+                            <TextView
+                                android:id="@+id/tv_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:text="￥100.00"
+                                android:textColor="@color/bg_orange_red"
+                                android:textSize="@dimen/text_size_big" />
+                        </LinearLayout>
+
+                        <!-- <TextView -->
+                        <!-- android:id="@+id/txtCollectLine" -->
+                        <!-- android:layout_width="1dp" -->
+                        <!-- android:layout_height="match_parent" -->
+                        <!-- android:layout_marginLeft="10dp" -->
+                        <!-- android:background="@color/bg_detail_line_light" -->
+                        <!-- android:visibility="gone" /> -->
+
+
+                        <!-- <LinearLayout -->
+                        <!-- android:id="@+id/layoutCollect" -->
+                        <!-- android:layout_width="0dp" -->
+                        <!-- android:layout_height="match_parent" -->
+                        <!-- android:layout_weight="1" -->
+                        <!-- android:gravity="center" -->
+                        <!-- android:orientation="horizontal" -->
+                        <!-- android:visibility="gone" > -->
+
+
+                        <!-- <CheckBox -->
+                        <!-- android:id="@+id/btn_collect" -->
+                        <!-- android:layout_width="wrap_content" -->
+                        <!-- android:layout_height="wrap_content" -->
+                        <!-- android:background="@null" -->
+                        <!-- android:button="@null" -->
+                        <!-- android:drawablePadding="-5dp" -->
+                        <!-- android:drawableTop="@drawable/selector_btn_icon_collect" -->
+                        <!-- android:gravity="center" -->
+                        <!-- android:text="收藏" -->
+                        <!-- android:textColor="@color/text_gray_light" -->
+                        <!-- android:textSize="@dimen/text_size_small" /> -->
+                        <!-- </LinearLayout> -->
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_train_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="培训时间： 2015-12-15"
+                            android:textColor="@color/text_gray_light"
+                            android:textSize="@dimen/text_size_small" />
+
+                        <TextView
+                            android:id="@+id/tv_purchase_number"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_left_right10"
+                            android:layout_weight="1"
+                            android:text="130人已购买"
+                            android:textColor="@color/text_gray_light"
+                            android:textSize="@dimen/text_size_small" />
+
+                        <TextView
+                            android:id="@+id/tv_train_area"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:gravity="right"
+                            android:text="四川成都"
+                            android:textColor="@color/text_gray_light"
+                            android:textSize="@dimen/text_size_small" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/bg_gray_light" />
+
+                    <TextView
+                        android:id="@+id/tv_student_evaluate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:drawableRight="@mipmap/arrow_right"
+                        android:text="学员评价（0）"
+                        android:textColor="@color/text_gray_deep"
+                        android:textStyle="bold" />
+
+                    <include layout="@layout/layout_trainpro_detail_evalute" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="@dimen/margin_left_right5"
+                        android:background="@color/bg_gray_light"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="1dp"
+                            android:background="@color/bg_gray" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_left_right5"
+                            android:layout_marginRight="@dimen/margin_left_right5"
+                            android:text="继续拖动，查看产品更多详情"
+                            android:textColor="@color/text_gray"
+                            android:textSize="@dimen/text_size_small" />
+
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="1dp"
+                            android:background="@color/bg_gray" />
+                    </LinearLayout>
+                    <!-- <include layout="@layout/layout_trainpro_detail_radiogroup" /> -->
+                </LinearLayout>
+            </LinearLayout>
+        </com.bofsoft.sdk.scrollview.ScrollViewOver>
+
+        <com.bofsoft.sdk.scrollview.ScrollViewOver
+            android:id="@+id/downScrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.bofsoft.laio.customerservice.Widget.OptionTab
+                    android:id="@+id/option_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp" />
+
+                <LinearLayout
+                    android:id="@+id/layout_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_right5"
+                    android:layout_marginRight="@dimen/margin_left_right5"
+                    android:layout_marginTop="3dp"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </LinearLayout>
+        </com.bofsoft.sdk.scrollview.ScrollViewOver>
+    </com.bofsoft.sdk.scrollview.ScrollViewContainer>
+
+    <com.bofsoft.laio.customerservice.Widget.OptionTab
+        android:id="@+id/option_tab_top"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

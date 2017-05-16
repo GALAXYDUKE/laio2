@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Bofsoft-library/Bofsoft-library.iml" filepath="$PROJECT_DIR$/Bofsoft-library/Bofsoft-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LaioCustomerService/LaioCustomerService.iml" filepath="$PROJECT_DIR$/LaioCustomerService/LaioCustomerService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Laiovehiclegps/Laiovehiclegps.iml" filepath="$PROJECT_DIR$/Laiovehiclegps/Laiovehiclegps.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StudentClient/StudentClient.iml" filepath="$PROJECT_DIR$/StudentClient/StudentClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TeacherClient/TeacherClient.iml" filepath="$PROJECT_DIR$/TeacherClient/TeacherClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/alipay_lib/alipay_lib.iml" filepath="$PROJECT_DIR$/alipay_lib/alipay_lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/laio.iml" filepath="$PROJECT_DIR$/laio.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <!--home碎片底部按钮-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:paddingBottom="@dimen/DP_5"
+        android:paddingTop="@dimen/DP_5" >
+
+        <ImageView
+            android:id="@+id/ico_iv"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center"
+            android:layout_alignTop="@+id/title_tv"
+            android:layout_alignBottom="@+id/title_tv"
+            android:src="@mipmap/index_friends_selected" />
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_marginLeft="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="1"
+            android:layout_toRightOf="@+id/ico_iv"
+            android:text="我的教练"
+            android:textColor="@color/textcolor_gray"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_alignParentRight="true"
+        android:background="@color/mytoorbar_line"
+        android:layout_width="1dp"
+        android:layout_height="50dp" />
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="@dimen/DP_20"
+        android:paddingTop="@dimen/DP_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/cnt_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/msg_cnt_style" />
+    </LinearLayout>
+
+</RelativeLayout>

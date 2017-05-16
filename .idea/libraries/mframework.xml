@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="mframework">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/LaioCustomerService/src/main/libs/mframework.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

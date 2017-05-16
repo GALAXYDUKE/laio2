@@ -1,0 +1,55 @@
+option java_package = "com.bofsoft.sdk.map";
+option java_outer_classname = "BaiduMapProtos";
+
+message resultBuf{
+	optional locationBuf location = 1;
+	optional string formatted_address = 2;
+	optional string business = 3;
+	optional addressComponentBuf addressComponent = 4;
+	repeated poisBuf pois = 5;
+	optional string sematic_description = 6;
+	optional int32 cityCode = 7;
+	repeated poiRegionsBuf poiRegions = 8;
+}
+
+message locationBuf {
+	optional double lng = 1;
+	optional double lat = 2;
+}
+
+message pointBuf {
+	optional double x = 1;
+	optional double y = 2;
+}
+
+message addressComponentBuf {
+	optional string city = 1;
+	optional string country = 2;
+	optional string direction = 3;
+	optional string distance = 4;
+	optional string district = 5;
+	optional string province = 6;
+	optional string street = 7;
+	optional string street_number = 8;
+	optional int32 country_code = 9;
+}
+
+message poisBuf{
+	optional string addr = 1;
+	optional string cp = 2;
+	optional string direction = 3;
+	optional string distance = 4;
+	optional string name = 5;
+	optional string poiType = 6;
+	optional pointBuf point = 7;
+	optional string tag = 8;
+	optional string tel = 9;
+	optional string uid = 10;
+	optional string zip = 11;
+
+}
+
+message poiRegionsBuf {
+	optional string direction_desc = 1;
+	optional string name = 2;
+}

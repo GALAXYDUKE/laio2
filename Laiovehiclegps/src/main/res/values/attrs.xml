@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Widget_Input">
+        <attr name="lable" format="string" />
+        <attr name="inPic" format="reference" />
+        <attr name="outPic" format="reference" />
+        <attr name="inputType" format="reference|string" />
+        <attr name="ibackground" format="reference" />
+        <attr name="itext" format="string" />
+        <attr name="itextColor" format="color" />
+        <attr name="itextSize" format="reference|integer" />
+        <attr name="inputMaxLength" format="reference|integer" />
+    </declare-styleable>
+
+    <declare-styleable name="Widget_Image_Text_Btn">
+        <attr name="text" format="string" />
+        <attr name="textColor" format="reference|color" />
+        <attr name="textSize" format="reference|integer" />
+        <attr name="src" format="reference" />
+        <attr name="backgroundColor" format="reference|color" />
+        <attr name="background" format="reference" />
+        <attr name="width" format="reference|integer" />
+        <attr name="position" format="string" />
+        <attr name="margin" format="reference|integer" />
+        <attr name="countText" format="string" />
+        <attr name="countLeft" format="reference|integer" />
+        <attr name="countTop" format="reference|integer" />
+    </declare-styleable>
+</resources>

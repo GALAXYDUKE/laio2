@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/appBgColor">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/margin_left_right"
+            android:paddingRight="@dimen/margin_left_right">
+
+            <com.bofsoft.laio.customerservice.Widget.Widget_Multi_Text_Button
+                android:id="@+id/set_btnBandingAlipay"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/selector_white_border_corners"
+                android:gravity="left|center"
+                android:paddingLeft="10dp"
+                app:tagVisiable="true"
+                app:textColorAll="@color/text_black_light"
+                app:textLeft="绑定支付宝"
+                app:textSizeAll="14" />
+
+            <!-- <com.bofsoft.laio.widget.Widget_Multi_Text_Button -->
+            <!-- android:id="@+id/set_btnBindingNewSchool" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="40dp" -->
+            <!-- android:layout_marginLeft="10dp" -->
+            <!-- android:layout_marginRight="10dp" -->
+            <!-- android:layout_marginTop="10dp" -->
+            <!-- android:background="@drawable/selector_white_border_corners" -->
+            <!-- android:gravity="left|center" -->
+            <!-- android:paddingLeft="10dp" -->
+            <!-- app:tagVisiable="true" -->
+            <!-- app:textColorAll="@color/text_black_light" -->
+            <!-- app:textLeft="更绑驾校" -->
+            <!-- app:textSizeAll="14" /> -->
+
+            <com.bofsoft.laio.customerservice.Widget.Widget_Multi_Text_Button
+                android:id="@+id/set_btnModifyPassword"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_white_border_corners"
+                android:gravity="left|center"
+                android:paddingLeft="10dp"
+                app:tagVisiable="true"
+                app:textColorAll="@color/text_black_light"
+                app:textLeft="修改登录密码"
+                app:textSizeAll="14" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

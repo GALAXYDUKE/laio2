@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:interpolator="@android:anim/linear_interpolator"
+    android:shareInterpolator="true">
+
+    <!--
+    <objectAnimator android:interpolator="@android:interpolator/decelerate_quint"
+        android:valueFrom="-100dp" android:valueTo="0.0dp"
+        android:valueType="floatType"
+        android:propertyName="translationX"
+        android:duration="1500"/>
+    
+    <objectAnimator android:interpolator="@android:interpolator/decelerate_quint"
+        android:valueFrom="0.0" android:valueTo="1.0"
+        android:valueType="floatType"
+        android:propertyName="alpha"
+        android:duration="1500"/>
+    -->
+
+    <!-- <translate
+        android:duration="500"
+        android:fromXDelta="100%p"
+        android:startOffset="200"
+        android:toXDelta="0%p" /> -->
+    
+    <alpha 
+        android:duration="1500"
+        android:fromAlpha="0.2"
+        android:toAlpha="1.0"/>
+    
+
+</set>

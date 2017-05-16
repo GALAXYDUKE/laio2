@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 标题栏背景颜色 -->
+    <color name="actionbar_color">#22292C</color>
+    <!-- 标题栏标题颜色 -->
+    <color name="actionbar_title_color">#ffffff</color>
+    <!-- 标题栏文字按钮颜色 -->
+    <color name="actionbar_texbutton_normalcolor">#ffffff</color>
+    <!-- 标题栏文字按钮按下颜色 -->
+    <color name="actionbar_texbutton_downcolor">#ffffff</color>
+    <!-- 标题栏按钮背景颜色 -->
+    <color name="actionbar_button_normalcolor">#22292C</color>
+    <!-- 标题栏按钮按下背景颜色 -->
+    <color name="actionbar_button_downcolor">#000000</color>
+
+    <color name="dialog_bg">#77000000</color>
+
+    <color name="tabbar_normal_color">#666666</color>
+    <color name="tabbar_down_color">#F04704</color>
+
+    <color name="RGB_YELLOW">#F04704</color>
+    <color name="ARGB_9YELLOW">#99F04704</color>
+    <color name="RGB_BLUE">#0A7DFD</color>
+    <color name="RGB_FFF">#FFFFFF</color>
+    <color name="RGB_666">#666666</color>
+    <color name="RGB_DDD">#DDDDDD</color>
+    <color name="RGB_EEE">#EEEEEE</color>
+    <color name="RGB_000">#000000</color>
+    <color name="RGB_F00">#FF0000</color>
+    <color name="RGB_0F0">#00FF00</color>
+    <color name="RGB_00F">#0000FF</color>
+    <color name="RGB_FF0">#FFFF00</color>
+    <color name="RGB_0FF">#00FFFF</color>
+    <color name="RGB_F0F">#FF00FF</color>
+</resources>

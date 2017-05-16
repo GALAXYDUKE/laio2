@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--background color-->
+    <color name="app_bg">#F0F0F0</color>
+    <color name="app_white">#FFFFFF</color>
+    <color name="marker_bg">#FBCA03</color>
+    <color name="green_bg">#43BF5F</color>
+    <color name="searchbox_bg">#43BF5F</color>
+    <color name="gray_bg">#666666</color>
+    <color name="bg_gray">#9c9c9c</color>
+    <color name="bg_gray_light">#d3d3d3</color>
+    <color name="global_bg">#eeeff3</color>
+    <color name="bg_D8">#D8D8D8</color>
+    <color name="bg_blue">#73B3F3</color>
+    <color name="appBgColor">#F6FAFB</color>
+    <color name="loginBtnColor">#F97135</color>
+    <color name="loginItemColor">#45BF60</color>
+
+    <color name="actionbar_btn_normal">#00000000</color>
+    <color name="actionbar_btn_down">#5C84B4</color>
+
+    <!--textcolor-->
+    <color name="textcolor_blue">#0e9ef5</color>
+    <color name="textcolor_green">#43BF5F</color>
+    <color name="textcolor_gray">#666666</color>
+    <color name="textcolor_gray1">#999999</color>
+    <color name="textcolor_white">#FFFFFF</color>
+    <color name="textcolor_login">#B5B5B5</color>
+    <color name="textcolor_protocol">#C0BDBE</color>
+    <color name="textcolor_drawerItem">#8A8A8A</color>
+
+    <!--linecolor-->
+    <color name="linecolor_white">#E6E6E6</color>
+    <color name="line_color">#dadada</color>
+    <color name="text_link">#00377A</color>
+    <color name="mytoorbar_line">#E8E8E8</color>
+</resources>

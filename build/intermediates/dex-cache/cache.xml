@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="D:\work\project\laio\Bofsoft-library\build\intermediates\bundles\default\libs\BaiduNaviSDK_3.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="87963035dc93c2cc8ef004cac99b7c33f0457c74">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\8\BaiduNaviSDK_3.2.0_943127e299225fa5ecac4f2fa129b8597a21a252\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\work\project\laio\Bofsoft-library\build\intermediates\bundles\default\libs\galaxy_lite.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6aa60980ca4e8abcd11889d1b4f35339404efa78">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\8\galaxy_lite_9ae5dd6690833457799a9dfbac14329ecb84f30c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\work\project\laio\Bofsoft-library\build\intermediates\bundles\default\libs\baidumapapi_cloud_v4_2_0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c09c412c0ac649c976490a852321423f3ffd30c3">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\8\baidumapapi_cloud_v4_2_0_d5524fa08c292651584e8ec39dad56572cf44596\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\work\project\laio\Bofsoft-library\build\intermediates\bundles\default\libs\alipaysdk.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="51a3a51be44b72849f4505e14b6200098ed7d574">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\8\alipaysdk_584b812bf884b7b05fecedb0c3c32c89bd14982f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\work\project\laio\Bofsoft-library\build\intermediates\bundles\default\libs\baidumapapi_radar_v4_2_0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2bfa25d928c800f2e74932488a9e749e7aa703f6">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\8\baidumapapi_radar_v4_2_0_0ff83039242fc60c8634ed5cbdd282294b7926a8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\work\project\laio\Bofsoft-library\build\intermediates\bundles\default\libs\baidumapapi_map_v4_2_0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7d12139d165772131fb3d1515452bcd0c2795b55">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\8\baidumapapi_map_v4_2_0_902c30c5a6cc31fe3806f05593a0358cca997968\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\work\project\laio\Bofsoft-library\build\intermediates\bundles\default\libs\fastjson-1.1.40.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0d07da0b50adc66ae1a3c4cf9d245fa2e06bdfd2">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\8\fastjson-1.1.40_28f29acdb904ab37cb900b37a551dd989b6dc2c6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\work\project\laio\Bofsoft-library\build\intermediates\bundles\default\libs\libammsdk.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e2a9c788016ea496c76407f409d8d1cf69f43cb3">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\8\libammsdk_cf34c6f183735940b5aba8622b5c1891144f908f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\work\project\laio\Bofsoft-library\build\intermediates\bundles\default\libs\baidumapapi_util_v4_2_0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5a04f688d6e1e441371a0cdc8b444c5d3a8962a9">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\8\baidumapapi_util_v4_2_0_d37df6553d65686cc07affbd9d48608c65f9bf59\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bofsoft\.android\build-cache\74d66ef364c53230f6dc668a59147d645c0ad601\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\10\classes_825856312ae8478fc519cc17453275d0304f22ed\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\work\project\laio\Bofsoft-library\build\intermediates\bundles\default\libs\universal-image-loader-1.9.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="eb75868296937d2585ab35ac1cc0462af2ea2925">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\8\universal-image-loader-1.9.2_fc9cca763f4acbd3638adfb0fed8e15045e94c51\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bofsoft\.android\build-cache\437dc37a6674b97bd11a477ba4e9b8e59b21bfdf\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a6c3adbf23f63c659472b73e99811eac87ad0b93\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bofsoft\.android\build-cache\ea766fd968dd180381e2ea0a8e7771afb68cb33b\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3f631a9973156e91d69d8e324a17792b6fc87464\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\work\project\laio\Bofsoft-library\build\intermediates\bundles\default\libs\universal-image-loader-1.9.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="eb75868296937d2585ab35ac1cc0462af2ea2925">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\8\universal-image-loader-1.9.2_fc9cca763f4acbd3638adfb0fed8e15045e94c51\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bofsoft\.android\build-cache\437dc37a6674b97bd11a477ba4e9b8e59b21bfdf\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a6c3adbf23f63c659472b73e99811eac87ad0b93\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bofsoft\.android\build-cache\292832c5ab4579f3f882511af47c41715f8a960e\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ec3d47ac3c70d62c596e8e3bcdab2741c79c20ba\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bofsoft\.android\build-cache\ea766fd968dd180381e2ea0a8e7771afb68cb33b\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3f631a9973156e91d69d8e324a17792b6fc87464\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\work\project\laio\Bofsoft-library\build\intermediates\bundles\default\libs\protobuf-java-format-1.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="89a5c0ac24d943b44541ed5b591435bb5c7e8114">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\8\protobuf-java-format-1.2_d116c66845064323b2b5ecc3749071e3a74afb6c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\work\project\laio\Bofsoft-library\build\intermediates\bundles\default\libs\com.baidu.speechsynthesizer_1.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="402ac601ee6a73fdd940971a12cdcb8e22efe166">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\8\com.baidu.speechsynthesizer_1.0.0_d2f2cb62465f3f50844063359e7aeb23a7d35c96\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bofsoft\.android\build-cache\22163e0d1428385991e6837f5fe32b7515cef51d\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="914f5d3e3ace66080e59613708f06d129a222e25">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\10\classes_110671bc644595de021100b7d97caaf56514d1de\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bofsoft\.android\build-cache\62e5ade6a19ef19643215fecd742ee7b7b0d000a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\10\classes_676c5e69d2e8dd6de7c6485bc459f60d5654e913\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bofsoft\.android\build-cache\5c1cca3ee83ddaf24a87075452838cf99b9861a0\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\10\classes_919000257b227665a03ce57e8a113e167bffec8e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\work\project\laio\Bofsoft-library\build\intermediates\bundles\default\libs\baidumapapi_base_v4_2_0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b378a139cb6f825cea83f349df80070cfb6ef964">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\8\baidumapapi_base_v4_2_0_25443d0aeba703ab73f42ee886b470bf17ff40a3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\work\project\laio\Bofsoft-library\build\intermediates\bundles\default\libs\testinagent.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b2d99a38d28c1914d32247a2f7d0d55d3de65695">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\8\testinagent_df28d68057755c4a12860b8be8d65a06fed0554d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\work\project\laio\Bofsoft-library\build\intermediates\bundles\default\libs\protobuf-java-2.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1787f110b2ac8166477b1856c9dee0486894c28d">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\8\protobuf-java-2.4.1_e1255a9196205786f7dbce5e411b267473dc1be7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\work\project\laio\Bofsoft-library\build\intermediates\bundles\default\libs\pushservice-5.6.0.30.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="31e0a4853cb1e9b63609289c1045a02778435b9a">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\8\pushservice-5.6.0.30_bf730ed7fbf69c2c48f59fa9d826e6a79ebf0336\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\work\project\laio\Bofsoft-library\build\intermediates\bundles\default\libs\galaxy_lite.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6aa60980ca4e8abcd11889d1b4f35339404efa78">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\8\galaxy_lite_9ae5dd6690833457799a9dfbac14329ecb84f30c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\work\project\laio\Bofsoft-library\build\intermediates\bundles\default\libs\libammsdk.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e2a9c788016ea496c76407f409d8d1cf69f43cb3">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\8\libammsdk_cf34c6f183735940b5aba8622b5c1891144f908f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\work\project\laio\Bofsoft-library\build\intermediates\bundles\default\libs\baidumapapi_search_v4_2_0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="368c4dd48dbbf2c4725c64b716e17ca9f5ee3469">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\8\baidumapapi_search_v4_2_0_558d66549a4279f468477fc941e60d844a2f4102\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\tools\SDK\SDK\extras\android\m2repository\com\android\support\support-annotations\25.3.1\support-annotations-25.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.3.1_8d003d924283f25d88fc59678b8593750f7ce00d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\work\project\laio\Bofsoft-library\build\intermediates\bundles\default\libs\httpmime-4.1.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3b762f16a072dbe778a2b72531974b1f133cb15b">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\8\httpmime-4.1.2_4bbe0985e4ad54e4a5adbb3efdc08161c8d306bf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\work\project\laio\Bofsoft-library\build\intermediates\bundles\default\libs\baidumapapi_util_v4_2_0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5a04f688d6e1e441371a0cdc8b444c5d3a8962a9">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\8\baidumapapi_util_v4_2_0_d37df6553d65686cc07affbd9d48608c65f9bf59\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\work\project\laio\Bofsoft-library\build\intermediates\bundles\default\libs\locSDK_6.13.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="38524b6ba51f9cab6674cc3d6d743164b9bdb4c0">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\8\locSDK_6.13_baba34f1504c4dd41fe9f7f0f593aa02e35d5c62\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\work\project\laio\Bofsoft-library\build\intermediates\bundles\default\libs\BaiduNaviSDK_3.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="87963035dc93c2cc8ef004cac99b7c33f0457c74">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\8\BaiduNaviSDK_3.2.0_943127e299225fa5ecac4f2fa129b8597a21a252\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\work\project\laio\Bofsoft-library\build\intermediates\bundles\default\libs\baidumapapi_radar_v4_2_0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2bfa25d928c800f2e74932488a9e749e7aa703f6">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\8\baidumapapi_radar_v4_2_0_0ff83039242fc60c8634ed5cbdd282294b7926a8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bofsoft\.android\build-cache\1a5abbaeec4c7903a328978a0485e21715a0ea5a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ee14d5e3782d5dabaf78b59a8e2403cd1d1ffdec\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bofsoft\.android\build-cache\292832c5ab4579f3f882511af47c41715f8a960e\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ec3d47ac3c70d62c596e8e3bcdab2741c79c20ba\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\work\project\laio\Bofsoft-library\build\intermediates\bundles\default\libs\alipaysdk.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="51a3a51be44b72849f4505e14b6200098ed7d574">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\8\alipaysdk_584b812bf884b7b05fecedb0c3c32c89bd14982f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bofsoft\.android\build-cache\22163e0d1428385991e6837f5fe32b7515cef51d\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="914f5d3e3ace66080e59613708f06d129a222e25">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\10\classes_110671bc644595de021100b7d97caaf56514d1de\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bofsoft\.android\build-cache\1a5abbaeec4c7903a328978a0485e21715a0ea5a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ee14d5e3782d5dabaf78b59a8e2403cd1d1ffdec\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bofsoft\.android\build-cache\62e5ade6a19ef19643215fecd742ee7b7b0d000a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\10\classes_676c5e69d2e8dd6de7c6485bc459f60d5654e913\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\work\project\laio\Bofsoft-library\build\intermediates\bundles\default\libs\com.baidu.speechsynthesizer_1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="402ac601ee6a73fdd940971a12cdcb8e22efe166">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\8\com.baidu.speechsynthesizer_1.0.0_d2f2cb62465f3f50844063359e7aeb23a7d35c96\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\work\project\laio\Bofsoft-library\build\intermediates\bundles\default\libs\baidumapapi_base_v4_2_0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b378a139cb6f825cea83f349df80070cfb6ef964">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\8\baidumapapi_base_v4_2_0_25443d0aeba703ab73f42ee886b470bf17ff40a3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\work\project\laio\Bofsoft-library\build\intermediates\bundles\default\libs\protobuf-java-2.4.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1787f110b2ac8166477b1856c9dee0486894c28d">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\8\protobuf-java-2.4.1_e1255a9196205786f7dbce5e411b267473dc1be7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bofsoft\.android\build-cache\74d66ef364c53230f6dc668a59147d645c0ad601\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\10\classes_825856312ae8478fc519cc17453275d0304f22ed\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\work\project\laio\Bofsoft-library\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="85c8595e09bb0ba4dd059bed909f8731aa5ce0e7">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\4\classes_a13046a66ac6de2c1bc253f115f7d1ea5369a2c2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bofsoft\.android\build-cache\5c1cca3ee83ddaf24a87075452838cf99b9861a0\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\10\classes_919000257b227665a03ce57e8a113e167bffec8e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\work\project\laio\Bofsoft-library\build\intermediates\bundles\default\libs\baidumapapi_map_v4_2_0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7d12139d165772131fb3d1515452bcd0c2795b55">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\8\baidumapapi_map_v4_2_0_902c30c5a6cc31fe3806f05593a0358cca997968\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\work\project\laio\Bofsoft-library\build\intermediates\bundles\default\libs\locSDK_6.13.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="38524b6ba51f9cab6674cc3d6d743164b9bdb4c0">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\8\locSDK_6.13_baba34f1504c4dd41fe9f7f0f593aa02e35d5c62\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\work\project\laio\Bofsoft-library\build\intermediates\bundles\default\libs\fastjson-1.1.40.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0d07da0b50adc66ae1a3c4cf9d245fa2e06bdfd2">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\8\fastjson-1.1.40_28f29acdb904ab37cb900b37a551dd989b6dc2c6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\work\project\laio\Bofsoft-library\build\intermediates\bundles\default\libs\baidumapapi_search_v4_2_0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="368c4dd48dbbf2c4725c64b716e17ca9f5ee3469">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\8\baidumapapi_search_v4_2_0_558d66549a4279f468477fc941e60d844a2f4102\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\work\project\laio\Bofsoft-library\build\intermediates\bundles\default\libs\testinagent.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b2d99a38d28c1914d32247a2f7d0d55d3de65695">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\8\testinagent_df28d68057755c4a12860b8be8d65a06fed0554d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\work\project\laio\Bofsoft-library\build\intermediates\bundles\default\libs\baidumapapi_cloud_v4_2_0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c09c412c0ac649c976490a852321423f3ffd30c3">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\8\baidumapapi_cloud_v4_2_0_d5524fa08c292651584e8ec39dad56572cf44596\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\work\project\laio\Bofsoft-library\build\intermediates\bundles\default\libs\protobuf-java-format-1.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="89a5c0ac24d943b44541ed5b591435bb5c7e8114">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\8\protobuf-java-format-1.2_d116c66845064323b2b5ecc3749071e3a74afb6c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\work\project\laio\Bofsoft-library\build\intermediates\bundles\default\libs\httpmime-4.1.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3b762f16a072dbe778a2b72531974b1f133cb15b">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\8\httpmime-4.1.2_4bbe0985e4ad54e4a5adbb3efdc08161c8d306bf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\tools\SDK\SDK\extras\android\m2repository\com\android\support\support-annotations\25.3.1\support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.3.1_8d003d924283f25d88fc59678b8593750f7ce00d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\work\project\laio\Bofsoft-library\build\intermediates\bundles\default\libs\pushservice-5.6.0.30.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="31e0a4853cb1e9b63609289c1045a02778435b9a">
+        <dex dex="D:\work\project\laio\Laiovehiclegps\build\intermediates\transforms\dex\debug\folders\1000\8\pushservice-5.6.0.30_bf730ed7fbf69c2c48f59fa9d826e6a79ebf0336\classes.dex" />
+    </item>
+
+</items>

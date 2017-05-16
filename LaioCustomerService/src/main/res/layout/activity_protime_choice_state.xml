@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/layout_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_left_right10"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_train_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="培训日期：2014-11-15"
+                    android:textColor="@color/text_black_light"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <TextView
+                    android:id="@+id/tv_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/arrow_right"
+                    android:text="更多"
+                    android:textColor="@color/text_black_light"
+                    android:textSize="@dimen/text_size_normal" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_left_right5"
+                android:background="@color/bg_gray_light" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/padding_left_right10"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="3dp"
+                        android:paddingTop="3dp"
+                        android:text="选择时段"
+                        android:textColor="@color/text_black_light"
+                        android:textSize="@dimen/text_size_normal"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtTimeState"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="3dp"
+                        android:paddingTop="3dp"
+                        android:text="无"
+                        android:textColor="@color/text_black_light"
+                        android:textSize="@dimen/text_size_normal" />
+                </LinearLayout>
+
+                <com.bofsoft.laio.widget.CustomGridView
+                    android:id="@+id/GridTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fadingEdge="none"
+                    android:numColumns="2"
+                    android:scrollbars="none" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/padding_left_right10"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="3dp"
+                        android:paddingTop="3dp"
+                        android:text="增值服务"
+                        android:textColor="@color/text_black_light"
+                        android:textSize="@dimen/text_size_normal"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtVasState"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="3dp"
+                        android:paddingTop="3dp"
+                        android:text="无"
+                        android:textColor="@color/text_black_light"
+                        android:textSize="@dimen/text_size_normal" />
+                </LinearLayout>
+
+                <com.bofsoft.laio.widget.CustomListView
+                    android:id="@+id/GridVas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fadingEdge="none"
+                    android:scrollbars="none" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/padding_left_right10"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:text="接送地址"
+                    android:textColor="@color/text_black_light"
+                    android:textSize="@dimen/text_size_normal"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtTransferAddrState"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:text="无"
+                    android:textColor="@color/text_black_light"
+                    android:textSize="@dimen/text_size_normal" />
+            </LinearLayout>
+
+            <com.bofsoft.laio.widget.CustomListView
+                android:id="@+id/list_TransferAddr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fadingEdge="none"
+                android:scrollbars="none"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/selector_white_border_corners"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/selector_orange_red_border"
+            android:text="确认"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_normal" />
+    </LinearLayout>
+
+</LinearLayout>

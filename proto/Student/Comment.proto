@@ -1,0 +1,34 @@
+option java_package = "com.bofsoft.laio.model.product";
+option java_outer_classname = "CommentProtos";
+
+//0x2453
+//12、	获取教练评价列表(用默认Key加解密)
+message loadReq {
+	required string MasterUUID = 1;
+	required int32 Type = 2;
+	required int32 ObjectType = 3;
+	required int32 Page = 4;
+	required int32 PageNum = 5;
+}
+
+message loadRes {
+	required bool more = 1;
+	required int32 RateTotal = 2;
+	optional int32 MasterRecommendIndex = 3;
+	repeated ItemBuf info = 4;
+}
+
+message ItemBuf {
+	required string StuName = 1;
+	required string Comment = 2;
+	required string Time = 3;
+	required int32 Type = 4;
+	optional int32 SignupPrice = 5;
+	optional int32 SignupFlow = 6;
+	optional int32 SignupService = 7;
+	optional int32 TrainCivilTeach = 8;
+	optional int32 TrainBenefit = 9;
+	optional int32 TrainTeachArea = 10;
+	optional int32 TrainTeachQuality = 11;
+	optional int32 TrainCarCondition = 12;
+}

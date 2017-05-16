@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/appBgColor" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.bofsoft.laio.customerservice.Widget.Widget_Multi_Text_Button
+                android:id="@+id/btn_balanceDetails"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_white_border_corners"
+                android:gravity="left|center"
+                android:paddingLeft="10dp"
+                app:tagVisiable="true"
+                app:textColorAll="@color/text_black_light"
+                app:textLeft="余额明细"
+                app:textSizeAll="14" />
+
+            <com.bofsoft.laio.customerservice.Widget.Widget_Multi_Text_Button
+                android:id="@+id/btn_BalanceOut"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_white_border_corners"
+                android:gravity="left|center"
+                android:paddingLeft="10dp"
+                app:tagVisiable="true"
+                app:textColorAll="@color/text_black_light"
+                app:textLeft="余额转出"
+                app:textSizeAll="14" />
+
+            <!--
+                <com.bofsoft.laio.widget.Widget_Multi_Text_Button
+                android:id="@+id/btn_ApplyMoneyBack"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_white_border_corners"
+                android:gravity="left|center"
+                android:paddingLeft="10dp"
+                app:tagVisiable="true"
+                app:textColorAll="@color/text_black_light"
+                app:textLeft="申请返款"
+                app:textSizeAll="14" />
+            -->
+
+
+            <!-- <com.bofsoft.laio.widget.Widget_Multi_Text_Button -->
+            <!-- android:id="@+id/btn_MoneyBackRecord" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="40dp" -->
+            <!-- android:layout_marginLeft="10dp" -->
+            <!-- android:layout_marginRight="10dp" -->
+            <!-- android:layout_marginTop="10dp" -->
+            <!-- android:background="@drawable/selector_white_border_corners" -->
+            <!-- android:gravity="left|center" -->
+            <!-- android:paddingLeft="10dp" -->
+            <!-- app:tagVisiable="true" -->
+            <!-- app:textColorAll="@color/text_black_light" -->
+            <!-- app:textLeft="返款记录" -->
+            <!-- app:textSizeAll="14" /> -->
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/DP_5"
+        android:paddingTop="@dimen/DP_5">
+
+        <ImageView
+            android:id="@+id/ico_iv"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/index_friends_selected" />
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DP_5"
+            android:gravity="center"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="我的教练"
+            android:textColor="@color/textcolor_gray"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="@dimen/DP_20"
+        android:paddingTop="@dimen/DP_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/cnt_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/msg_cnt_style" />
+    </LinearLayout>
+
+</RelativeLayout>

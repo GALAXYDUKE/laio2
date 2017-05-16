@@ -1,0 +1,129 @@
+option java_package = "com.bofsoft.laio.model.order";
+option java_outer_classname = "OrderProtos";
+
+//0x2943
+//学员端_订单详情列表
+message OrderReq{
+	required int32 GroupDM = 1;
+	optional int32 OrderType = 2;
+	optional int32 ProType = 3;
+	optional int32 Page = 4;
+	optional int32 PageNum = 5;
+}
+
+//请求返回
+message OrderRsp{
+	repeated OrderItem OrderList = 1;
+	optional int32 TotalCount = 2;
+	optional bool More = 3;
+}
+
+//订单列表项详情
+message OrderItem {
+	required int32 Id = 1;
+    optional string Num = 2;
+    optional string Name = 3;
+    optional string View = 4;
+    optional int32 GroupDM = 5;
+    optional int32 OrderType = 6;
+    optional int32 Status = 7;
+    optional int32 StatusTrain = 8;
+    optional int32 CanCancel = 9;
+    optional int32 PayDeposit = 10;
+    optional int32 StatusAppraise = 11;
+    optional int32 StatusAccepted = 12;
+    optional int32 RefundStatus = 13;
+    optional string DeadTime = 14;
+    optional string ConfirmTime = 15;
+    repeated VasItem VasList = 16;
+    optional string OrderTime = 17;
+    optional string CoachName = 18;
+    optional string CarType = 19;
+    optional double Deposit = 20;
+    optional double DealSum = 21;
+    optional int32 RegType = 22;
+    optional int32 TrainType = 23;
+    optional int32 TestSubId = 24;
+    optional string TestSub = 25;
+    optional string CarModel = 26;
+    optional string TrainStartTime = 27;
+    optional string TrainEndTime = 28;
+}
+
+//Web返回增值服务
+message VasItem {
+	required string Id = 1;
+    optional int32 VasType = 2;
+    optional string Name = 3;
+    optional int32 VasAmount = 4;
+    optional double VasPrice = 5;
+    optional double VasTotal = 6;
+}
+
+//0x2951
+//查看单张订单详情（教练、学员同一接口）
+message OrderDetailReq{
+	required int32 OrderId = 1;
+}
+
+//请求返回
+message OrderDetailRsp{
+	required int32 Id = 1;
+    optional string Num = 2;
+    optional string CustomerCode = 3;
+    optional string Name = 4;
+    optional float DealSum = 5;
+    optional string View = 6;
+    optional string ViewOrder = 7;
+    optional string ViewPro = 8;
+    optional string CoachTel = 9;
+    optional int32 SendMsg = 10;
+    optional string OrderTime = 11;
+    optional string CoachUserUUID = 12;
+    optional string CoachName = 13;
+    optional string ProPicUrl = 14;
+    optional string BuyerUUID = 15;
+    optional string BuyerName = 16;
+    optional string BuyerTel = 17;
+    optional int32 OrderType = 18;
+    optional int32 Status = 19;
+    optional int32 StatusTrain = 20;
+    optional int32 CanCancel = 21;
+    optional int32 PayDeposit = 22;
+    optional int32 TrainRemainMin = 23;
+    optional int32 StatusAppraise = 24;
+    optional int32 StatusAccepted = 25;
+    optional double CancelFine = 26;
+    optional string CancelTime = 27;
+    optional string CancelReason = 28;
+    optional string StartTime = 29;
+    optional string EndTime = 30;
+    optional int32 RefundStatus = 31;
+    optional double RefundSum = 32;
+    optional string DeadTime = 33;
+    optional string ConfirmTime = 34;
+    optional string StartAddr = 35;
+    optional string DistrictMC = 36;
+    optional string TrainSite = 37;
+    optional string SiteAddr = 38;
+    optional int32 Amount = 39;
+    optional int32 TestSubId = 40;
+    optional double DepositFee = 41;
+    optional int32 DepositStatus = 42;
+    optional double FinalFee = 43;
+    optional int32 FinalStatus = 44;
+    optional string RefundRequestTime = 45;
+    repeated TimeItem TimeList = 46;
+    repeated string AddrList = 47;
+    repeated VasItem VasList = 48;
+}
+
+message TimeItem {
+	required string Name = 1;
+    optional string ClassType = 2;
+    optional string Times = 3;
+    optional int32 Count = 4;
+    optional double Price = 5;
+    optional double Total = 6;
+}
+

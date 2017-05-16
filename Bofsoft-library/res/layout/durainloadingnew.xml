@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bofsoft.sdk.widget.loadfailed.DurianLoadingNew xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_loadingImg"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/nodatapic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_above="@+id/tv_loadingTxt" />
+
+        <TextView
+            android:id="@+id/tv_loadingTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/grey"
+            android:text="加载数据中..." />
+    </RelativeLayout>
+</com.bofsoft.sdk.widget.loadfailed.DurianLoadingNew>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Bofsoft-library" />
+            <option value="$PROJECT_DIR$/LaioCustomerService" />
+            <option value="$PROJECT_DIR$/Laiovehiclegps" />
+            <option value="$PROJECT_DIR$/StudentClient" />
+            <option value="$PROJECT_DIR$/TeacherClient" />
+            <option value="$PROJECT_DIR$/alipay_lib" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

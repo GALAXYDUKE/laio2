@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        />
+
+    <RelativeLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/layout_border_corners"
+        android:layout_margin="10dp"
+        android:focusable="true"
+        android:gravity="center"
+        android:focusableInTouchMode="true">
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_search"/>
+
+        <RelativeLayout
+            android:id="@+id/ll_image_pop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/item_tips"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/tips_textview_bg"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:focusable="false"
+                android:text="333"
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <AutoCompleteTextView
+            android:id="@+id/autotext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="搜车辆"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_search"
+            android:completionThreshold="1"
+            android:singleLine="true"
+             />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_normal"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/ll_search"
+        android:layout_marginRight="5dp"
+        android:src="@mipmap/index_normal_on"/>
+
+    <ImageView
+        android:id="@+id/iv_satellite"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/index_satellite_off"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/iv_normal" />
+
+    <ImageView
+        android:id="@+id/iv_traffic"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/index_traffic_off"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/iv_satellite" />
+
+
+
+    <ImageView
+        android:id="@+id/iv_right"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/index_right"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="5dp"
+        />
+
+    <ImageView
+        android:id="@+id/iv_left"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/index_left"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_above="@+id/iv_right"
+        />
+
+    <ImageView
+        android:id="@+id/iv_popwindow"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/index_popwindow"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_above="@+id/iv_left"
+        />
+
+    <ImageView
+        android:id="@+id/iv_location"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/index_location"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_above="@+id/iv_popwindow"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_distance"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="#33000000"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/tv_distance"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/SP_14"
+            android:textColor="@color/textcolor_white"
+            android:gravity="center"
+            android:text="123456"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

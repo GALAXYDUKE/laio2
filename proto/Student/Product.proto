@@ -1,0 +1,196 @@
+option java_package = "com.bofsoft.laio.model.product";
+option java_outer_classname = "ProductProtos";
+
+//0x2862
+//加载课表
+message SyllabusLoadReq{
+	required string StartDate = 1;
+	required string EndDate = 2;
+	required string SvrUUID = 3;
+	optional int32 ProType = 4;
+}
+
+//课表集合
+message SyllabusLoadRes{
+	repeated SyllabusListBuf info = 1;
+}
+
+message SyllabusListBuf {
+	optional string UUID = 1;
+	optional string TrainDate = 2;
+	optional int32 TrainType = 3;
+	optional int32 TestSubId = 4;
+	repeated SDTestSubBuf TestSubList = 5;
+	optional int32 ClassTimeTypeId = 6;
+	optional int32 ClassId = 7;
+	optional int32 DistrictId = 8;
+	optional int32 TrainSiteId = 9;
+	optional string TrainBeginTime = 10;
+	optional string TrainEndTime = 11;
+	optional int32 QuotaTotal = 12;
+	optional int32 QuotaUsed = 13;
+	optional int32 FromDP = 14;
+	optional string DeadTime = 15;
+	optional int32 ProType = 16;
+}
+
+//0x2863
+//课表详情
+message SyllabusDetailReq {
+	required string TimeTableUUID = 1;
+	optional string SvrUUID = 2;
+	required int32 ShowAppoint = 3;
+	required int32 ProType = 4;
+}
+
+message SyllabusDetailRes {
+	optional int32 ProType = 1;
+	optional int32 TrainType = 2;
+	repeated SDTestSubBuf TestSubList = 3;
+	optional int32 ClassTimeTypeId = 4;
+	optional int32 ClassId = 5;
+	optional int32 DistrictId = 6;
+	optional int32 TrainSiteId = 7;
+	optional int32 QuotaTotal = 8;
+	optional int32 QuotaUsed = 9;
+	optional string TrainBeginTime = 10;
+	optional string TrainEndTime = 11;
+	optional string DeadTime = 12;
+	repeated SDTimeBuf TimeList = 13;
+	repeated SDAppointBuf AppointList = 14;
+	repeated SDPriceBuf PriceList = 15;
+}
+
+message SDTestSubBuf {
+	optional int32 Id = 1;
+}
+
+message SDTimeBuf {
+	optional int32 Id = 1;
+	optional int32 Num = 2;
+	optional int32 Enable = 3;
+	optional int32 OrderId = 4;
+	optional string GUID = 5;
+	optional string Name = 6;
+	optional int32 TimeSpace = 7;
+	optional int32 SpecId = 8;
+}
+
+message SDAppointBuf {
+	optional string BuyerUUID = 1;
+	optional string BuyerName = 2;
+	optional string BuyerTel = 3;
+	optional string TrainTime = 4;
+	optional int32 OrderId = 5;
+	optional int32 OrderStatus = 6;
+}
+
+message SDPriceBuf {
+	optional int32 Id = 1;
+	optional int32 SpecId = 2;
+	optional int32 Unit = 3;
+	optional float Price = 4;
+	optional float SalePrice = 5;
+}
+
+//0x2929
+//学员端_通过课表提交培训产品
+message AppointmentReq {
+	required int32 OpeType = 1;
+	required int32 ProType = 2;
+	required int32 TrainType = 3;
+	optional int32 TestSubId = 4;
+	optional string TimeTableUUID = 5;
+	optional string CoachUserUUID = 6;
+	repeated TimeItem TimesList = 7;
+	optional int32 StuDPId = 8;
+	optional string StuName = 9;
+	optional string StuPhone = 10;
+}
+
+message TimeItem {
+	required int32 Id = 1;
+	required string Name = 2;
+	optional string DPGUID = 3;
+	optional float DPSalePrice = 4;
+}
+
+message AppointmentRsp {
+	required int32 Code = 1;
+	optional int32 OrderId = 2;
+	optional string Content = 3;
+}
+
+//0x2912
+//产品详情
+message ProductDetailReq {
+	required int32 ProType = 1;
+	required int32 ProId = 2;
+}
+
+message ProductDetailRes {
+	optional int32 Id = 1;
+	optional int32 ProType = 2;
+	optional string Name = 3;
+	optional string Intro = 4;
+	optional int32 Status = 5;
+	optional string CoachName = 6;
+	optional string CarType = 7;
+	optional double Deposit = 9;
+	optional double SalePrice = 10;
+	optional double SalePriceMax = 11;
+	optional int32 RegType = 12;
+	optional string TestSub = 13;
+	optional string TrainDate = 14;
+	optional string TrainBTime = 15;
+	optional string TrainETime = 16;
+	optional string TrainSite = 17;
+	optional string TrainSiteAddr = 18;
+	optional double TrainSiteLat = 19;
+	optional double	TrainSiteLng = 20;
+	optional int32 DealNo = 21;
+	optional string School = 22;
+	optional string CarPicUrl = 23;
+	repeated VasBuf VasList = 24;
+	repeated AddrRegBuf AddrRegList = 25;
+}
+
+message VasBuf {
+	required int32 Id = 1;
+	required string Name= 2;
+}
+
+message AddrRegBuf {
+	required int32 Id = 1;
+	required string Addr = 2;
+	required double Lat = 3;
+	required double Lng = 4;
+}
+
+//0x2910
+//学员端_招生产品_获取服务标准 
+message SerFeatureReq {
+	required int32 RegType = 1;
+}
+
+message SerFeatureRes {
+	repeated string StandardList = 1;
+}
+
+//0x1253
+//学员我要报名找教练引导
+message ProGuideReq {
+	
+}
+
+message ProGuideRes {
+	repeated ProGuideItem info = 1;
+}
+
+message ProGuideItem {
+	optional int32 regtype = 1;
+	optional string title = 2;
+	optional string hint = 3;
+	optional string operate = 4;
+	optional string feature = 5;
+}

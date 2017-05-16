@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingBottom="10dp" >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/appBgColor" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/margin_left_right"
+            android:paddingRight="@dimen/margin_left_right" >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:shrinkColumns="1" >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/selector_white_border_corners" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:text="支付宝账号："
+                        android:textColor="@color/text_black_light"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/bg_gray_light" />
+
+                    <EditText
+                        android:id="@+id/edtOutAmount"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="输入您的支付宝账号"
+                        android:padding="5dp"
+                        android:textSize="@dimen/text_size_normal" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/selector_white_border_corners" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="账号姓名："
+                        android:textColor="@color/text_black_light"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/bg_gray_light" />
+
+                    <EditText
+                        android:id="@+id/edtAliName"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="输入您的支付宝账号的姓名"
+                        android:inputType="text"
+                        android:padding="5dp"
+                        android:textSize="@dimen/text_size_normal" />
+                </TableRow>
+            </TableLayout>
+
+            <com.bofsoft.laio.customerservice.Widget.Widget_Image_Text_Btn
+                android:id="@+id/btn_Out"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                app:background="@mipmap/button_send"
+                app:text="确认提交"
+                app:textColor="@color/text_white"
+                app:textSize="16" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

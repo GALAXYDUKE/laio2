@@ -1,0 +1,7 @@
+option java_package = "com.bofsoft.sdk.pay";
+option java_outer_classname = "PayProtos";
+
+message PayInfoBuf {
+	optional string sign = 1;		//支付宝	微信
+	optional string prepayId = 2; 	//			微信		预支付交易会话ID
+}

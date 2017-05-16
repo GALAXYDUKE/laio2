@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bofsoft.laio.laiovehiclegps.Widget.Widget_Input
+        android:id="@+id/ci_login_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        app:inPic="@mipmap/index_mine_selected"
+        app:inputMaxLength="11"
+        app:itext="请输入姓名"
+        app:lable="姓名"
+        app:outPic="@mipmap/index_mine_nomal"/>
+    <com.bofsoft.laio.laiovehiclegps.Widget.Widget_Input
+        android:id="@+id/ci_login_id"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        app:inPic="@mipmap/ci_id_focus"
+        app:inputMaxLength="11"
+        app:itext="请输入身份证号"
+        app:lable="身份证号"
+        app:outPic="@mipmap/ci_id"/>
+    <com.bofsoft.laio.laiovehiclegps.Widget.Widget_Input
+        android:id="@+id/ci_login_phonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        app:inPic="@mipmap/ci_phonenumber_focus"
+        app:inputMaxLength="11"
+        app:itext="请输入手机号"
+        app:lable="手机号"
+        app:outPic="@mipmap/ci_phonenumber"/>
+    <com.bofsoft.laio.laiovehiclegps.Widget.Widget_Input
+        android:id="@+id/ci_login_banknumber"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        app:inPic="@mipmap/ci_bankcard_focus"
+        app:inputMaxLength="11"
+        app:itext="请输入银行卡号"
+        app:lable="银行卡号"
+        app:outPic="@mipmap/ci_bankcard"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical">
+
+        <CheckBox
+            android:id="@+id/checkProtocol_Vas"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/selector_checkbox_mul"
+            android:button="@null"
+            android:checked="true" />
+
+        <TextView
+            android:id="@+id/txtProtocol_Vas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/SP_10"
+            android:layout_toRightOf="@+id/checkProtocol_Vas"
+            android:text="我已阅读并同意"
+            android:textColor="@color/lightgrey"
+            android:textSize="@dimen/SP_12" />
+
+        <TextView
+            android:id="@+id/txtProtocol_Vas02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/txtProtocol_Vas"
+            android:text="《来噢租车授权保密协议》"
+            android:textColor="@color/lightgrey"
+            android:textSize="@dimen/SP_12" />
+    </RelativeLayout>
+
+    <com.bofsoft.laio.laiovehiclegps.Widget.Widget_Image_Text_Btn
+        android:id="@+id/login_btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        app:backgroundColor="@color/loginBtnColor"
+        app:text="提 交"
+        app:textColor="@color/white"
+        app:textSize="16" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+package com.bofsoft.laio.common;
+
+public class ServerConfigall{
+	public static final String serverip = "m.laio.cn";
+	public static final int serverport = 58888;
+	public static String WebHost = "http://www.laio.cn";
+	public static final boolean IS_DEBUG_VER = false; // 是否是调试版本
+	public static short CodeNum = CodeNumConst.CODENUM_098; // 客户端版本
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/inc_empty_view"
+        layout="@layout/emptyview"></include>
+
+    <com.bofsoft.sdk.widget.listview.pulllistview.PageListView
+        android:id="@+id/paglistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:divider="@color/transparent"
+        android:gravity="fill"
+        android:horizontalSpacing="5dp"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp" />
+
+</LinearLayout>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left_right5"
+        android:layout_marginRight="@dimen/margin_left_right5"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_left_right5"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="文明教学"
+                android:textColor="@color/text_gray_light"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/tv_jiaoxue"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableRight="@mipmap/icon_evaluate"
+                android:gravity="center"
+                android:text="4.9"
+                android:textColor="@color/bg_orange"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/bg_detail_line_light" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_left_right5"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="教学风气"
+                android:textColor="@color/text_gray_light"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/tv_kayao"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableRight="@mipmap/icon_evaluate"
+                android:gravity="center"
+                android:text="4.9"
+                android:textColor="@color/bg_orange"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/bg_detail_line_light" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_left_right5"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="教学场地"
+                android:textColor="@color/text_gray_light"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/tv_changdi"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableRight="@mipmap/icon_evaluate"
+                android:gravity="center"
+                android:text="4.9"
+                android:textColor="@color/bg_orange"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/bg_detail_line_light" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_left_right5"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="带教质量"
+                android:textColor="@color/text_gray_light"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/tv_zhiliang"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableRight="@mipmap/icon_evaluate"
+                android:gravity="center"
+                android:text="4.9"
+                android:textColor="@color/bg_orange"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/bg_detail_line_light" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_left_right5"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="车辆状况"
+                android:textColor="@color/text_gray_light"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/tv_zhuangkuang"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableRight="@mipmap/icon_evaluate"
+                android:gravity="center"
+                android:text="4.9"
+                android:textColor="@color/bg_orange"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/margin_left_right5"
+        android:layout_marginRight="@dimen/margin_left_right5"
+        android:layout_marginTop="@dimen/margin_left_right5"
+        android:background="@color/bg_detail_line_light" />
+
+    <LinearLayout
+        android:id="@+id/layout_evaluateinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_evaluate_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_student"
+            android:gravity="center"
+            android:text="130******12" />
+
+        <TextView
+            android:id="@+id/tv_evaluate_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="@dimen/margin_left_right5"
+            android:layout_marginRight="@dimen/margin_left_right5"
+            android:text="教练服务态度很好，对学员很有耐心，非常不错！教练服务态度很好，对学员很有耐心，非常不错"
+            android:textColor="@color/text_gray_light" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingBottom="10dp" >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/appBgColor" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txtIntro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="是否同意退款："
+                    android:textColor="@color/text_black_light"
+                    android:textSize="14sp" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_gray_border"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radioButton1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:checked="true"
+                        android:text="不同意"
+                        android:textColor="@color/text_black_light"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="同意"
+                        android:textColor="@color/text_black_light"
+                        android:textSize="14sp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/bg_gray_light" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="退款说明 ："
+                    android:textColor="@color/text_black_light"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/edtReason"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_input_border"
+                    android:gravity="left|top"
+                    android:minHeight="100dp"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@color/text_black_light"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <com.bofsoft.laio.customerservice.Widget.Widget_Image_Text_Btn
+                android:id="@+id/btn_MoneyBack"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                app:background="@mipmap/button_send"
+                app:text="确认退款"
+                app:textColor="@color/text_white" >
+            </com.bofsoft.laio.customerservice.Widget.Widget_Image_Text_Btn>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

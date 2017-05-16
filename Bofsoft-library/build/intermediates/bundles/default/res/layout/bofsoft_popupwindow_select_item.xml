@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/pop_tv"
+        android:background="@drawable/bofsoft_photo_bgcolor_selecter"
+        android:layout_margin="1px"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/DP_10"
+        style="@style/title_1_blue" />
+
+</LinearLayout>

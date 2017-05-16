@@ -1,0 +1,133 @@
+option java_package = "com.bofsoft.laio.model.demand";
+option java_outer_classname = "DemandProtos";
+
+//0x2870
+//发布报名需求
+message DemandRegReq{
+    required int32 CarTypeId = 1;
+    optional int32 RegType = 2;
+    optional string Addr = 3;
+    optional double AddrLng = 4;
+    optional double AddrLag = 5;
+    optional string Content = 6;
+}
+
+//0x2871
+//发布培训、陪练需求
+message DemandTrainReq{
+    required int32 ProType = 1;
+    optional int32 CarTypeId = 2;
+    optional int32 CarModelId = 3;
+    optional int32 TestSubId = 4;
+    optional string TrainDate = 5;
+    optional int32 ClassTimeTypeId = 6;
+    optional int32 TrainSpan = 7;
+    optional string Addr = 8;
+    optional double AddrLng = 9;
+    optional double AddrLag = 10;
+    optional string Content = 11;
+}
+
+message DemandStdRsp{
+    required int32 Code = 1;
+    optional string Content = 2;
+}
+
+//0x2872
+//学员端_获取需求列表/教练端_获取抢单列表
+message DemandListReq{
+    required int32 DemandStatus = 1;
+    required int32 Page = 2;
+    required int32 PageNum = 3;
+}
+
+message DemandListRsp{
+    repeated DemandItem DemandList = 1;
+    optional bool More = 2;
+}
+
+message DemandItem{
+    required string DemandUUID = 1;
+    optional string DemandName = 2;
+    optional int32 ProType = 3;
+    optional string ProTypeName = 4;
+    optional int32 CarTypeId = 5;
+    optional string Addr = 6;
+    optional string Content = 7;
+    optional int32 DemandStatus = 8;
+    optional string PubTime = 9;
+    optional int32 RegType = 10;
+    optional string DeadTime = 11;
+    optional string TrainIntro = 12;
+    optional int32 TestSubId = 13;
+    optional string TrainDate = 14;
+    optional int32 ClassTimeTypeId = 15;
+    optional int32 TrainSpan = 16;
+    optional int32 SeekCount = 17;
+    optional string BuyerUUID = 18;
+    optional string BuyerName = 19;
+    optional string BuyerTel = 20;
+    optional string TrainBeginTime = 21;
+    optional string TrainEndTime = 22;
+    optional string SeekTime = 23;
+}
+
+//0x2873
+//学员端_获取教练已抢单列表
+message DemandTeaListReq{
+    required string DemandUUID = 1;
+}
+
+message DemandTeaListRsp{
+    repeated DemandTeaItem SeekList = 1;
+}
+
+message DemandTeaItem{
+    required int32 SeekId = 1;
+    optional int32 ProType = 2;
+    optional string ProTypeName = 3;
+    optional int32 CarTypeId = 4;
+    optional string Addr = 5;
+    optional string Content = 6;
+    optional int32 DemandStatus = 7;
+    optional string PubTime = 8;
+    optional int32 HasView = 9;
+    optional string SvrUUID = 10;
+    optional string SvrName = 11;
+    optional string SvrTel = 12;
+    optional string SvrPicURL = 13;
+    optional double SalePrice = 14;
+    optional int32 RegType = 15;
+    optional string DeadTime = 16;
+    optional int32 CarModelId = 17;
+    optional int32 TestSubId = 18;
+    optional string TrainDate = 19;
+    optional int32 ClassTimeTypeId = 20;
+    optional int32 TrainSpan = 21;
+    optional int32 ProId = 22;
+    repeated TimeItem TimeList = 23;
+}
+
+message TimeItem{
+    required int32 Id = 1;
+    optional string Name = 3;
+}
+
+//0x2874
+//学员端_取消需求
+message DemandCancelReq{
+    required string DemandUUID = 1;
+}
+
+//0x2996~0x2997
+//学员端_报名/培训需求快速下单
+message DemandOrderReq{
+    required int32 SeekId = 1;
+}
+
+message DemandOrderRsp{
+    required int32 Code = 1;
+    optional int32 OrderId = 2;
+    optional string Content = 3;
+}
+

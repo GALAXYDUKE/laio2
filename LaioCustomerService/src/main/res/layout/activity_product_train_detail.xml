@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <!-- <Button -->
+    <!-- android:id="@+id/myShare" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:text="我的分享" /> -->
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <include layout="@layout/layout_product_detail" />
+
+        <RelativeLayout
+            android:id="@+id/lv_right_drawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:background="@color/bg_white"
+            android:choiceMode="singleChoice"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp" >
+
+            <include layout="@layout/activity_product_detail_train_popup" />
+        </RelativeLayout>
+    </android.support.v4.widget.DrawerLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/selector_white_border_corners"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="2" >
+
+<!--         <ImageButton -->
+<!--             android:id="@+id/ibtn_collect" -->
+<!--             android:layout_width="0dp" -->
+<!--             android:layout_height="match_parent" -->
+<!--             android:layout_margin="5dp" -->
+<!--             android:layout_weight="1" -->
+<!--             android:background="@drawable/selector_white_border_corners" -->
+<!--             android:src="@drawable/selector_btn_icon_collect" -->
+<!--             android:visibility="gone" /> -->
+
+        <Button
+            android:id="@+id/btn_confirm_buy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="2"
+            android:background="@drawable/selector_orange_red_border"
+            android:text="我要培训"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_normal" />
+
+        <ImageButton
+            android:id="@+id/ibtn_call_coach"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_white_border_corners"
+            android:src="@mipmap/icon_phone"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

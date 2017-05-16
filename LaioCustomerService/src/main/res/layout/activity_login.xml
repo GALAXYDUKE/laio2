@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/margin_left_right"
+        android:paddingRight="@dimen/margin_left_right">
+
+        <!--<com.bofsoft.laio.customerservice.Widget.Widget_Input-->
+        <!--android:id="@+id/wi_code"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--app:inPic="@mipmap/login_code_focus"-->
+        <!--app:inputMaxLength="11"-->
+        <!--app:inputType="textPhone"-->
+        <!--app:itext="请输入系统编号"-->
+        <!--app:lable="编        号"-->
+        <!--app:outPic="@mipmap/login_code_normal" >-->
+        <!--</com.bofsoft.laio.customerservice.Widget.Widget_Input>-->
+
+        <com.bofsoft.laio.customerservice.Widget.Widget_Input
+            android:id="@+id/wi_username"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            app:inPic="@mipmap/login_username_focus"
+            app:inputMaxLength="11"
+            app:itext="请输入用户名"
+            app:lable="用  户  名"
+            app:outPic="@mipmap/login_username_normal"></com.bofsoft.laio.customerservice.Widget.Widget_Input>
+
+        <com.bofsoft.laio.customerservice.Widget.Widget_Input
+            android:id="@+id/wi_password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            app:inPic="@mipmap/login_password_focus"
+            app:inputMaxLength="20"
+            app:inputType="textPassword"
+            app:itext="请输入密码"
+            app:lable="密        码"
+            app:outPic="@mipmap/login_password_normal"></com.bofsoft.laio.customerservice.Widget.Widget_Input>
+    </LinearLayout>
+
+    <com.bofsoft.laio.customerservice.Widget.Widget_Image_Text_Btn
+        android:id="@+id/login_btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        app:background="@mipmap/button_send"
+        app:text="登        录"
+        app:textColor="@color/white"
+        app:textSize="16"
+        android:layout_marginLeft="@dimen/margin_left_right"
+        android:layout_marginRight="@dimen/margin_left_right" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_weight="0.08">
+
+        <TextView
+            android:id="@+id/txtProtocol_Vas"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="忘记密码"
+            android:textColor="@color/text_link"
+            android:textSize="@dimen/SP_14"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+</LinearLayout>

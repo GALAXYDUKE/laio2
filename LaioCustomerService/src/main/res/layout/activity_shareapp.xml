@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/appBgColor">
+	<m.framework.ui.widget.asyncview.AsyncImageView
+	    android:id="@+id/erweima_pic"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_above="@+id/btn_share"
+	    />
+   <com.bofsoft.laio.customerservice.Widget.Widget_Button
+       android:id="@+id/btn_share"
+       android:layout_width="match_parent"
+       android:layout_height="40dp"
+       android:layout_alignParentBottom="true"
+       android:layout_margin="10dp"
+       android:background="@mipmap/button_send"
+       android:textColor="#fff"
+       android:textSize="16sp"
+       android:text="复制链接"/>
+</RelativeLayout>

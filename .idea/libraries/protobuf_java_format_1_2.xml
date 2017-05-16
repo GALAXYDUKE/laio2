@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="protobuf-java-format-1.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Bofsoft-library/libs/protobuf-java-format-1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

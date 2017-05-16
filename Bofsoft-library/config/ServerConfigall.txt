@@ -1,0 +1,15 @@
+package com.bofsoft.laio.common;
+
+public class ServerConfigall {
+  public static String serverip = "m.laio.cn"; // 外网
+  public static int serverport = 58888;
+  public static String serveripgps = "10.0.0.28"; // 测试服务器
+  public static int serverportgps = 38888;
+  public static String gpsHost = "http://gps.laio.cn:8070/gpshost/";
+  public static String WebHost = "http://" + serverip;//+ ":8010";
+  public static String gpsWebHost = "http://www.laio.cn";
+  public static final boolean IS_DEBUG_VER = false; // 是否是调试版本
+  public static short CodeNum = CodeNumConst.CODENUM_DEFAULT; // 客户端版本
+  public static boolean MyLog_is_w = false;
+  public static boolean Mylog_is_file = false;
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal" >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_marker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/marker_status1"/>
+        <TextView
+            android:id="@+id/tv_marker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:background="@color/marker_bg"
+            android:text="川A12345"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/iv_marker"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

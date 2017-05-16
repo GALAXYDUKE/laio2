@@ -1,0 +1,125 @@
+option java_package = "com.bofsoft.laio.model.member";
+option java_outer_classname = "MemberProtos";
+
+
+//0x1000
+//登录
+message LoginReq {
+    optional string Username = 1;
+    optional string Userpassword = 2;
+    optional string Type = 3;
+    optional string Danwei = 4;
+    optional string Ver = 5;
+    optional string SystemType = 6;
+    optional string SystemVersion = 7;
+    optional string UserToken = 8;
+    optional string GUID = 9;
+    optional string PhoneManufacturers = 10;
+    optional string PhoneModel = 11;
+}
+
+message LoginRes {
+    optional string Key = 1;
+    optional string Session = 2;
+    optional string UserPhone = 3;
+    optional string UserERPName = 4;
+    optional string UserERPDanwei = 5;
+    optional string UserUUID = 6;
+    optional string CoachType = 7;
+}
+
+//0x1001
+//注销登录
+message LogoutReq {
+    optional string Username = 1;
+}
+
+message LogoutRes {
+    
+}
+
+//获取教练认证信息
+message LoadAuthInfoReq {
+	
+}
+
+message LoadAuthInfoRes {
+	optional string CityDM = 1;
+	optional string CityName = 2;
+	optional string DistrictDM = 3;
+	optional string DistrictName = 4;
+	optional string SchoolDM = 5;
+	optional string SchoolName = 6;
+	optional string Name = 7;
+	optional string IDCardNum = 8;
+	optional string TeachCarType = 9;
+	optional string TeachCardNum = 10;
+	optional string TeachDueDate = 11;
+	optional string YYZNum = 12;
+	optional string YYZCarLicense = 13;
+	optional string YYZJYLicense = 14;
+	optional string YYZCarType = 15;
+	optional string XSZVehicleType = 16;
+	optional string XSZModel = 17;
+	optional string XSZSendDate  =18;
+}
+
+//0x2867
+//教练端_提交自定义训练场地
+message TrainSiteReq {
+	optional string TrainSiteMC = 1;
+	optional int32 ProvinceId = 2;
+	optional string ProvinceDM = 3;
+	optional int32 CityId = 4;
+	optional string CityDM = 5;
+	optional int32 AreaId = 6;
+	optional string AreaDM = 7;
+	optional string Addr = 8;
+	optional double AddrLng = 9;
+	optional double AddrLat = 10;
+}
+
+message TrainSiteRes {
+	optional int32 Code = 1;
+	optional string Content = 2;
+	optional int32 TrainSiteId = 3;
+}
+
+
+//0x2868
+//添加、设置默认、删除我的训练场地
+message TrainEditReq {
+	optional int32 TrainSiteId = 1;
+	optional int32 OpeType = 2; //操作类型，1添加，0设置默认，-1删除
+}
+
+message TrainEditRes {
+	optional int32 Code = 1;
+	optional string Content = 2;
+}
+
+
+//0x2869
+//获取我的训练场地列表
+message TrainListReq {
+	
+}
+
+message TrainListRes {
+	repeated TrainItem TrainSiteList = 1;
+}
+
+message TrainItem {
+	optional int32 Id = 1;
+	optional string Name = 2;
+	optional string Addr = 3;
+	optional int32 IsDefault = 4;
+}
+
+//0x2716
+//获取绑定的ERP账号信息 (教练)
+message ERPNumberRes {
+	optional int32 BindStatus = 1;
+	optional string SchoolNum = 2;
+	optional string UserName = 3;
+}
